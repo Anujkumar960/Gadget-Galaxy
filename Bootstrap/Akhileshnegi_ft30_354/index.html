@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bootstrap Cards</title>
+
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .full-width-container {
+            width: 100vw;
+            margin: 0;
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+
+        .reliance-cards .card {
+            border-radius: 10px;
+        }
+
+        .reliance-cards .card:hover {
+            transform: none;
+        }
+
+        .offer .card:hover {
+            transform: none;
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+            border-radius: 0;
+        }
+
+        .card {
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+            border-radius: 0;
+        }
+
+        .card:hover {
+            transform: scaleX(1.08) scaleY(1.08);
+            transform-origin: center top;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border: 5px solid transparent;
+
+        }
+
+        .section-heading {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- start -->
+
+    <div class="container mt-4" style="background-color: #f9f9f9;">
+        <h6 class="section-heading">Kitchen Festival</h6>
+        <div class="row">
+
+           
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="https://www.reliancedigital.in/medias/1-Digital-Kitchen-Festival-Banner-340x255px.jpg?context=bWFzdGVyfGltYWdlc3w0NjM5N3xpbWFnZS9qcGVnfGltYWdlcy9oZDQvaDEyLzEwMDk5ODczNDQ3OTY2LmpwZ3xlOTZjZDgxNzg3MDJkM2RkMjA4ZjU4NWQyNTk3Zjk1ZGJlMGRmNWM5M2MxYTgzZWY0ZTU4NGMxOTFlZGJiODU4"
+                        class="card-img-top" alt="Card image cap">
+                </div>
+            </div>
+
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="https://www.reliancedigital.in/medias/2-Digital-Kitchen-Festival-Banner-340x255px.jpg?context=bWFzdGVyfGltYWdlc3w0ODMwNHxpbWFnZS9qcGVnfGltYWdlcy9oNTkvaDc5LzEwMDk5ODczNTEzNTAyLmpwZ3wzNzFmOGFiYjQ5NWJjMGFhNWI0ZmJmMmExMDNlYWEzMjYxYmZiYWVlYzAyYzEzMTg3MjkxN2FkYTViNmY4M2Ew"
+                        class="card-img-top" alt="Card image cap">
+                </div>
+            </div>
+
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="https://www.reliancedigital.in/medias/3-Digital-Kitchen-Festival-Banner-340x255px.jpg?context=bWFzdGVyfGltYWdlc3w1MjcwOXxpbWFnZS9qcGVnfGltYWdlcy9oYWUvaGFkLzEwMDk5ODczNTc5MDM4LmpwZ3xjYjgxYTliZGRhMzI4ZjY1YmRkZmI5OWE0YmIyMDIyZGU3ZGE2ZTc2MWZlYjk1OTE1ZWE0NzQ0MzZmMDRmYmRi"
+                        class="card-img-top" alt="Card image cap">
+                </div>
+            </div>
+
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="https://www.reliancedigital.in/medias/4-Digital-Kitchen-Festival-Banner-340x255px.jpg?context=bWFzdGVyfGltYWdlc3w0NDU5NnxpbWFnZS9qcGVnfGltYWdlcy9oNGQvaDJmLzEwMDk5ODczNjQ0NTc0LmpwZ3xjNDgyNjA5OTM1OTg3M2FhMGIwMjZiMThlNWE1ZDQ3MTk2MTAyMDZiMjA1NTM5YWFlMjE1YzVlOWIzNzk4MDI1"
+                        class="card-img-top" alt="Card image cap">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!-- below -->
+
+
+    <div class="container mt-4" style="background-color: #f9f9f9;">
+        <h6 class="section-heading">Great Deals on Electronics</h6>
+        <div class="row">
+
+            <!-- First Row -->
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="https://www.reliancedigital.in/medias/Realme-C55-GDOE-Banners-Red-Grey-Banners-.jpg?context=bWFzdGVyfGltYWdlc3w1MDc5OHxpbWFnZS9qcGVnfGltYWdlcy9oNWYvaDVhLzEwMDk2MzA5Nzk2ODk0LmpwZ3w2NmE5MGVlMjJhZjFhYWEwODM4MGM3MGE4OTRlYTEyYzVkMTU5MjAyY2I3NDU0OWFmMTE3MjQyNzU2ZmI3NzZh"
+                        class="card-img-top" alt="Card image cap">
+                </div>
+            </div>
+
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="https://www.reliancedigital.in/medias/boAt-Airdopes-GDOE-Banners-Red-Grey-Banners-340x255px.jpg?context=bWFzdGVyfGltYWdlc3wzNTA0MHxpbWFnZS9qcGVnfGltYWdlcy9oYjcvaDI3LzEwMDgyODMxMjM3MTUwLmpwZ3xiNzMwZDQ3N2I3MWIwYTg1NzU3NDc0YjgyZWU0Njc2ODg3YzBhZDczYTg5ZTFjZTM1YTRhYmMxOGU2MzBjN2Vl"
+                        class="card-img-top" alt="Card image cap">
+                </div>
+            </div>
+
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="https://www.reliancedigital.in/medias/Canon-Printer.jpg?context=bWFzdGVyfGltYWdlc3wzOTE1NXxpbWFnZS9qcGVnfGltYWdlcy9oNzQvaDQyLzEwMDc5NjE3MTg3ODcwLmpwZ3w1YzcxMGI4MGE4Njg5ZTNiZDJhMDllODU2OTJiMmEwZjIzNjAwOGIwZGIxN2Q5ZWNiOTllYmRhYjc2NmZjODEx"
+                        class="card-img-top" alt="Card image cap">
+                </div>
+            </div>
+
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="https://www.reliancedigital.in/medias/Best-Selling-Laptops.jpg?context=bWFzdGVyfGltYWdlc3w0NzA4NnxpbWFnZS9qcGVnfGltYWdlcy9oNTgvaDFhLzEwMDg0OTI0MDYzNzc0LmpwZ3xkYzIyYWQwYjFhNjEwMTFhZTU3NTU4ZDZmYjVmMTE3MjRiOGNhOWJmMzU0ZTZmZmIwMmQzNDM1NjMzMWIxZjQy"
+                        class="card-img-top" alt="Card image cap">
+                </div>
+            </div>
+
+            <!-- Second Row -->
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="https://www.reliancedigital.in/medias/Large-Appliances.jpg?context=bWFzdGVyfGltYWdlc3wzMzM1OXxpbWFnZS9qcGVnfGltYWdlcy9oZjIvaGQwLzEwMDc5NjE3MjUzNDA2LmpwZ3xhNjkwZTYzMTgwNjJmY2MxMjRiNjYwYjBlOWFkZGI2MDYzNGQyODEyMDUwNTFlMzliYjA3ZjEzMGMyZGEwMjNl"
+                        class="card-img-top" alt="Card image cap">
+                </div>
+            </div>
+
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="https://www.reliancedigital.in/medias/TV-Sale-GDOE-Banners-Red-Grey-Banners-340x255px.jpg?context=bWFzdGVyfGltYWdlc3w4Njc5MnxpbWFnZS9qcGVnfGltYWdlcy9oNTIvaDU2LzEwMDkyNTUxODMxNTgyLmpwZ3xhY2FhNDc4MTE2YTUxMDk1NDhkZjAxMzAwZDNiY2RmMzBlMmQ1MWExZjc2ZTU5ZjNhODE1OGI3NzBkZTM1MTE1"
+                        class="card-img-top" alt="Card image cap">
+                </div>
+            </div>
+
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="https://www.reliancedigital.in/medias/Personal-Care-GDOE-Banners-Red-Grey-Banners-340x255px.jpg?context=bWFzdGVyfGltYWdlc3w0Mjg2NnxpbWFnZS9qcGVnfGltYWdlcy9oNjcvaDIzLzEwMDgyMjU3MTA5MDIyLmpwZ3w5ZmVkMDkzZmE3NzI5ZjNkMDhkYTZjZGQ2MTZjYjI1MDQ3OGViNjljMTgzNjIzYjA1NjBhZjgwYTYyYWQ0Zjhm"
+                        class="card-img-top" alt="Card image cap">
+                </div>
+            </div>
+
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="https://www.reliancedigital.in/medias/Smartwatches.jpg?context=bWFzdGVyfGltYWdlc3w1MTE1N3xpbWFnZS9qcGVnfGltYWdlcy9oNWIvaDYwLzEwMDc5NjE3NTE1NTUwLmpwZ3w1N2MwOGYwMGFjZTFjYzYzY2JjYWVkMjMyNDdjY2Y2Y2ZmYzM3ZDRiYjQzMDQ1MWU3ZDEwZDRhNzFlOTZkZDli"
+                        class="card-img-top" alt="Card image cap">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- below offer -->
+
+
+    <div class="container mt-4 offer" style="background-color: #f9f9f9;">
+        <div class="row">
+
+            <!-- Full Width Image -->
+            <div class="col-md-12 mb-4">
+                <div class="card">
+                    <img src="https://www.reliancedigital.in/medias/RD-SBI-Card-Banner-D.jpg?context=bWFzdGVyfGltYWdlc3wxMDUwODN8aW1hZ2UvanBlZ3xpbWFnZXMvaGE2L2hiMi8xMDA3NTU4ODUyNjExMC5qcGd8OTgzOWJjZThlZDgyYWVmMmUxMWVlODdmMWRiOTMyZGQ5MjFlOTBmOGFmMDNjMGE4NmExNTdjZDlkMTM3ZTcyMw"
+                        class="card-img-top" alt="Card image cap">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- THE RELIANCE DIGITAL BRAND PROMISE -->
+
+
+    <div class="container mt-4 reliance-cards" style="background-color: #ffffff#fff;">
+        <h4 class="section-heading" style="text-align: center; color: #0033a1;">THE RELIANCE DIGITAL BRAND PROMISE</h4>
+        <div class="row">
+
+
+            <div class="col-md-3 mb-4">
+                <div class="card text-center-card"
+                    style="background-color: #f7f7f7; height: 110px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                    <img src="https://www.reliancedigital.in/medias/Insta-Delivery-Brand-Promise-Icon.png?context=bWFzdGVyfGltYWdlc3wxNTM3fGltYWdlL3BuZ3xpbWFnZXMvaGI2L2gwNS85NDQ3MTcwMzQyOTQyLnBuZ3w2Yzc1ZmY1ZjYwOWIyNWU0ZTgwMjFlYmRkMTU5ZTgzMGI4ZDNmZTE2NjVjYmRlMmUwMmRiODI2OTExNWM5ZTdk"
+                        class="card-img-top" alt="Card image cap" style="height: 80px; width: auto; margin-top: 5px;">
+                    <div class="card-body">
+                        <h6 class="card-title" style="margin: 0;color: #0033a1;">INSTA DELIVERY</h6>
+                        <p class="card-text" style="margin: 0; text-align: center; font-size: 12px;">LESS THAN 3 HRS</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card text-center-card"
+                    style="background-color: #f7f7f7; height: 110px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                    <img src="https://www.reliancedigital.in/medias/Best-Finance-Options-2.png?context=bWFzdGVyfGltYWdlc3wxMjM4fGltYWdlL3BuZ3xpbWFnZXMvaDJmL2gxOS85NDQ3MTcwNDA4NDc4LnBuZ3xlMDBiNjY4YWI5YzMzYjZkZDhlZTMyMDhjYjE2YzI2OTY2NWJhYjk2M2VkNzdjZDg3NTNlMGEyMTA1ZjFlODZh"
+                        class="card-img-top" alt="Card image cap" style="height: 80px; width: auto; margin-top: 5px;">
+                    <div class="card-body">
+                        <h6 class="card-title" style="margin: 0;color: #0033a1;">MULTIPLE FINANCE OPTION</h6>
+                        <p class="card-text" style="margin: 0; text-align: center; font-size: 12px;">NO COST EMI</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 mb-4">
+                <div class="card text-center-card"
+                    style="background-color: #f7f7f7; height: 110px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                    <img src="https://www.reliancedigital.in/medias/service-img.png?context=bWFzdGVyfGltYWdlc3w5MTB8aW1hZ2UvcG5nfGltYWdlcy9oMDYvaGEzLzkwOTA3OTc5OTQwMTQucG5nfGJjZmJhNzM1ODdkYTQ5ODI3YzNiMzQ1ZTdlM2JjNjUwMTBjM2E3YWFjNmUxZjdmMmEyOGRjZDMxOGI4ZWE0MWY"
+                        class="card-img-top" alt="Card image cap" style="height: 80px; width: auto; margin-top: 5px;">
+                    <div class="card-body">
+                        <h6 class="card-title" style="margin: 0;color: #0033a1;">SERVICE GUARANTEE</h6>
+                        <p class="card-text" style="margin: 0; text-align: center; font-size: 12px;">HASSLE FREE</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 mb-4">
+                <div class="card text-center-card"
+                    style="background-color: #f7f7f7; height: 110px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                    <img src="https://www.reliancedigital.in/medias/unmatched-network-img.png?context=bWFzdGVyfGltYWdlc3w3NDV8aW1hZ2UvcG5nfGltYWdlcy9oODIvaDJhLzkwOTA3OTgwNTk1NTAucG5nfDFmMThjYzdiYTNiOTgxYjA5YzdlZTFiMmQyODI5MGY2NTM4ZTcxOWZkZTA1ZjAzY2Q1ZTk5YjQ1NTMxMWViYzU"
+                        class="card-img-top" alt="Card image cap" style="height: 80px; width: auto; margin-top: 5px;">
+                    <div class="card-body">
+                        <h6 class="card-title" style="margin: 0;color: #0033a1;">UNMATCHED NETWORK</h6>
+                        <p class="card-text" style="margin: 0; text-align: center; font-size: 12px;">700 CITIES, 2000
+                            STORES</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+<!--  cards of the upper, middle and bottom -->
+
+</body>
+
+</html>
