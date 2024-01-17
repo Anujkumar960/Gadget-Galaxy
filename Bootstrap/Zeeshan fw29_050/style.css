@@ -1,0 +1,142 @@
+.top{
+    display: flex;
+    justify-content: end;
+    background-color: red;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    padding: 2px 30px 2px 0px;
+    >a{
+        text-decoration: none;
+        color: white;
+        font-size: 13px;
+        font-weight: 600;
+      }
+  }
+  .parent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: red;
+    color: white;
+    position: sticky;
+    top: 0px;
+    height: 70px;
+    z-index: 1;
+    >div:nth-child(1){
+      width: 18%;
+      display: flex;
+      justify-content: center;
+      >img{
+        width: 200px;
+        height: 100px;
+      }
+    }
+    >div:nth-child(2){
+      width: 38%;
+      position: relative;
+      input{
+        width: 100%;
+        border-radius: 20px;
+        border: none;
+        padding: 5px;
+      }
+      input::placeholder{
+        padding-left: 10px;
+        font-size: 14px;
+        color: grey;
+      }
+      input:focus {
+        border:2px solid #007bff;
+        outline: none;
+      }
+      i{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 10px;
+        cursor: pointer;
+      }
+    }
+    >div:nth-child(3){
+      display: flex;
+      gap: 10px;
+      width: 23%;
+      align-items: center;
+      >a{
+        text-decoration: none;
+        color: white;
+        font-size: 13px;
+        font-weight: 500;
+      }
+    }
+  }
+  .nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color:#193380;
+    color: white;
+    font-size: 12px;
+    font-weight: 500;
+    position: sticky;
+    top: 70px;
+    z-index: 1;
+    a{
+      text-decoration: none;
+      color: white;
+      font-size: 12px;
+      font-weight: 500;
+    }
+    >div{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+    }
+    >div:hover{
+      background-color: red;
+    }
+    >div:hover ~ .dropdown{
+      display: block;
+    }
+  }
+  .nav>.dropdown{
+      display: none;
+      width: 95.5%;
+      position: absolute;
+      height: 200px;
+      background-color: #28336b;
+      transform: translate(0px,119px);
+  }
+  #carouselExampleInterval{
+    margin-top: 10px;
+    >button{
+    background-color:#e1f5fd;
+    height: 100px;
+    width:40px;
+    margin: auto;
+    border: 2px solid white;
+    i{
+        color: black;
+        font-size: 30px;
+    }
+    }
+    
+}
+  #carouselExampleInterval>div:nth-child(1){
+    gap: 10px;
+    margin-bottom: -1px;
+    button{
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background-color: black;
+    }  
+  }
+  .bottom{
+    height: 100vh;
+    background-color: blue;
+    
+  }
+  
