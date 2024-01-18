@@ -15,7 +15,7 @@
   }
   .parent {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     background-color: red;
     color: white;
@@ -61,7 +61,8 @@
     >div:nth-child(3){
       display: flex;
       gap: 10px;
-      width: 23%;
+      width:400px;
+      justify-content: center;
       align-items: center;
       >a{
         text-decoration: none;
@@ -70,6 +71,10 @@
         font-weight: 500;
       }
     }
+  }
+  .nav>.dropdown1>ul>li:nth-child(1) a{
+    font-size: 13px;
+    font-weight: 500;
   }
   .nav{
     display: flex;
@@ -82,35 +87,73 @@
     position: sticky;
     top: 70px;
     z-index: 1;
-    a{
+    div>a{
       text-decoration: none;
       color: white;
       font-size: 12px;
       font-weight: 500;
     }
-    >div{
+    >div:nth-child(odd){
       display: flex;
       justify-content: center;
       align-items: center;
       padding: 10px;
     }
-    >div:hover{
+    >div:nth-child(odd):hover{
       background-color: red;
     }
-    >div:hover ~ .dropdown{
-      display: block;
+    >div:nth-child(odd):hover + .dropdown1{
+      display:flex;
+      flex-flow: column wrap;
+      align-content: start;
+    }
+    .dropdown1:hover {
+      display: flex;
+      flex-flow: column wrap;
+      align-content: start;
+      
     }
   }
-  .nav>.dropdown{
+  .nav>.dropdown1{
       display: none;
+      flex-flow: column wrap;
+      align-content: start;
       width: 95.5%;
       position: absolute;
-      height: 200px;
+      top: 38px;
+      height:40vh;
       background-color: #28336b;
-      transform: translate(0px,119px);
+      transition: all 1s ease-in-out;
+      /* transform: translate(0px,119px); */
+      /* border: 2px solid red; */
+      a{
+        text-decoration: none;
+        color: white;
+        /* font-size: 12px; */
+        font-weight:100;
+      }
+      li{
+        list-style: none;
+        cursor: pointer;
+        margin: 3px;
+        width: fit-content;
+      }
+      li:hover{
+        text-decoration: underline;
+      }    
   }
+  /* @media screen and (max-width: 768px) {
+    .pin {
+        display: none;
+    }
+
+    span {
+        display: inline;
+    } */
+}
   #carouselExampleInterval{
     margin-top: 10px;
+    cursor: pointer;
     >button{
     background-color:#e1f5fd;
     height: 100px;
@@ -121,10 +164,34 @@
         color: black;
         font-size: 30px;
     }
-    }
-    
+    }   
 }
   #carouselExampleInterval>div:nth-child(1){
+    gap: 10px;
+    margin-bottom: -1px;
+    button{
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background-color: black;
+    }  
+  }
+  #carouselExampleInterval1{
+    margin-top: 10px;
+    cursor: pointer;
+    >button{
+    background-color:#e1f5fd;
+    height: 100px;
+    width:40px;
+    margin: auto;
+    border: 2px solid white;
+    i{
+        color: black;
+        font-size: 30px;
+    }
+    }   
+}
+  #carouselExampleInterval1>div:nth-child(1){
     gap: 10px;
     margin-bottom: -1px;
     button{
