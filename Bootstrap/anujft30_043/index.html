@@ -8,12 +8,21 @@
     <title>Bootstrap Example</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/2d0c2a73d8.js" crossorigin="anonymous"></script>
     <style>
         body{
             margin:0px;
             padding:0px;
         }
-        #back,#forward{
+        .carousel-control-prev,.carousel-control-next{
+            /* border:2px solid black; */
+            opacity:2;
+            width:5%;
+            margin:50px;
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+        .ab{
             /* border:2px solid black; */
             opacity:2;
             width:5%;
@@ -43,81 +52,116 @@ span.material-symbols-outlined:hover{
 #carouselExample{
     box-sizing: border-box;
 }
+.col-md {
+  margin-right: -15px;
+    margin-left: -15px;
+  }
+  .card {
+    margin-bottom: 0;
+    margin:0;
+  }
+.card>div:hover h5{
+  color: red;
+}
+.imgclass{
+  transition: transform 1s;
+  padding-top:23px;
+  position: relative;
+  z-index: 1;
+}
+.imgclass:hover{
+  transform:scale(1.1);
+  cursor: pointer;
+}
+.card{
+  border:none;
+  background-color: rgb(255,255,255);
+}
+.card-offer{
+  background-color: rgb(0, 127, 173);
+    border-radius: 8px 0;
+    color: #fff;
+    display: inline-block;
+    font-weight: 500;
+    position:relative;
+    z-index: 2;
+    font-size: 12px;
+    height: 18px;
+    line-height: 14px;
+    padding: 2px 8px;
+    margin:0;
+}
     
     </style>
   </head>
   <body class="p-3 m-0 border-0 bd-example m-0 border-0">
-    <!-- <div class="card" style="width: 19rem;">
-        <img style="width:80%;" src="https://www.reliancedigital.in/medias/TCL-WashingMachine-494338668-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wzMTMzM3xpbWFnZS9qcGVnfGltYWdlcy9oNjAvaDBiLzEwMDk5NDg4MjYwMTI2LmpwZ3w1OGVmOWNhZmMzZWNjNzIxYjQwOGU3MTY1MDBmYzlmMDc2MTJiNDlmMjAxMjRhMGQ5YTNmZGNlNzQ2ZGYyODFh" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 style="font-size: 14px; " class="card-title">TCL 7 Kg Top Loading Fully Automatic Washing Machine, F3070TLG Dark Grey</h5>
-          <div style="display: flex; margin-bottom: 0px;  height:20px "><p >Offer Price:</p><h6 style="margin-left: 4px; color:black; display: flex; justify-content: center; align-items: center; height:25px;">₹14,590.00</h6></div>
-          <div style="display: flex; margin-bottom: 0px;margin-top: 0px; height:20px;"><p >Offer Price:</p><p style="margin-left: 4px; text-decoration: line-through; display: flex; justify-content: center; align-items: center; height:25px;">₹14,590.00</p></div>
-          <div style="display: flex; margin-bottom: 0px; margin-top: 0%; height:20px;"><p >M.R.P.:</p><p style="margin-left:4px; display: flex;  justify-content: center; align-items: center; height:25px; ">44%(₹11,400)</p></div>
-        </div>
-      </div> -->
+   
 
     <!-- Example Code -->
-    
-    <div id="carouselExample" class="carousel slide">
-        <div  class="carousel-inner">
-          <div  class="carousel-item active">
-           <div class="container">
-            <div class="row">
-                <div class="col-md col-12">
-                    <div class="card" style="width: 100%;">
-                        <img style="width:80%; margin-left:20%;" src="https://www.reliancedigital.in/medias/TCL-WashingMachine-494338668-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wzMTMzM3xpbWFnZS9qcGVnfGltYWdlcy9oNjAvaDBiLzEwMDk5NDg4MjYwMTI2LmpwZ3w1OGVmOWNhZmMzZWNjNzIxYjQwOGU3MTY1MDBmYzlmMDc2MTJiNDlmMjAxMjRhMGQ5YTNmZGNlNzQ2ZGYyODFh" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 style="font-size: 14px; " class="card-title">TCL 7 Kg Top Loading Fully Automatic Washing Machine, F3070TLG Dark Grey</h5>
-                          <div style="display: flex; margin-bottom: 0px;  height:20px "><p >Offer Price:</p><h6 style="margin-left: 4px; color:black; display: flex; justify-content: center; align-items: center; height:25px;">₹14,590.00</h6></div>
-                          <div style="display: flex; margin-bottom: 0px;margin-top: 0px; height:20px;"><p >Offer Price:</p><p style="margin-left: 4px; text-decoration: line-through; display: flex; justify-content: center; align-items: center; height:25px;">₹14,590.00</p></div>
-                          <div style="display: flex; margin-bottom: 0px; margin-top: 0%; height:20px;"><p >M.R.P.:</p><p style="margin-left:4px; display: flex;  justify-content: center; align-items: center; height:25px; ">44%(₹11,400)</p></div>
-                        </div>
-                      </div> 
+    <div>
+      <div style="display: flex; margin:0; padding:0;padding-top: 30px;  background-color: rgb(250, 250, 250);"><p style=" font-weight: 600;">Best Selling TVs | Starting From 8999</p>
+        <button style="background-color: rgb(0,51,128); margin-left: 10px; color:white; border:none; height:25px; width:70px; font-size: 14px;">View all</button></div>
+        <div id="carouselExample" style="margin-top:0px;" class="carousel slide">
+            <div  class="carousel-inner">
+              <div  class="carousel-item active">
+               <div class="container-fluid" >
+                <div class="row" style="margin-top:0;">
+                <div class="col-md col-12" style="margin-top:0px">
+                  <div class="card" style="width: 98%;"><div style="margin-bottom:0px;">
+                    <img class="imgclass" style="display: block; margin: 0 auto; width: 80%; margin-bottom:10px;" src="Washing-Machineimg/ws-1.jpg" alt="img1">
+                      <a href="#" class="cardanchor" style="text-decoration: none; color:rgb(0,51,128);"><h5 style="font-size: 14px;" class="card-title">TCL 7 Kg Top Loading Fully Automatic Washing Machine, F3070TLG Dark Grey</h5></a></div>
+                      <div class="card-body" style="padding:0px; padding-top:7px;">
+                      <div style="display: flex; margin-bottom: 0px; padding-top:0px;  margin-top:0px; height:20px "><p  style="color:rgb(128,128,128);font-size:14px; height:20px;">Offer Price:</p><h6 style=" margin-left: 4px; font-size:14px;color:black; display: flex; justify-content: center; align-items: center; height:20px;">₹14,590.00</h6></div>
+                      <div style="display: flex; margin-bottom: 0px;margin-top: 0px; height:20px; color:rgb(128,128,128)"><p style="font-size:14px;">M.R.P:</p><p style="margin-left: 4px; text-decoration: line-through; display: flex; justify-content: center; align-items: center; font-size: 14px; height:20px;">₹25,990.00</p></div>
+                      <div style="display: flex; margin-bottom: 0px; margin-bottom: 5%; height:20px; color:rgb(128,128,128)"><p style="font-size:14px;  height:20px;">You Save:</p><p style="margin-left:4px; display: flex;  justify-content: center; align-items: center; font-size: 14px; height:20px; " >44%(₹11,400)</p></div>
+                    </div>
+                  </div> 
                 </div>
                 <div class="col-md col-12">
-                    <div class="card" style="width: 100%;">
-                        <img style="width:80%;margin-left:20%;" src="https://www.reliancedigital.in/medias/TCL-WashingMachine-494338668-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wzMTMzM3xpbWFnZS9qcGVnfGltYWdlcy9oNjAvaDBiLzEwMDk5NDg4MjYwMTI2LmpwZ3w1OGVmOWNhZmMzZWNjNzIxYjQwOGU3MTY1MDBmYzlmMDc2MTJiNDlmMjAxMjRhMGQ5YTNmZGNlNzQ2ZGYyODFh" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 style="font-size: 14px; " class="card-title">TCL 7 Kg Top Loading Fully Automatic Washing Machine, F3070TLG Dark Grey</h5>
-                          <div style="display: flex; margin-bottom: 0px;  height:20px "><p >Offer Price:</p><h6 style="margin-left: 4px; color:black; display: flex; justify-content: center; align-items: center; height:25px;">₹14,590.00</h6></div>
-                          <div style="display: flex; margin-bottom: 0px;margin-top: 0px; height:20px;"><p >Offer Price:</p><p style="margin-left: 4px; text-decoration: line-through; display: flex; justify-content: center; align-items: center; height:25px;">₹14,590.00</p></div>
-                          <div style="display: flex; margin-bottom: 0px; margin-top: 0%; height:20px;"><p >M.R.P.:</p><p style="margin-left:4px; display: flex;  justify-content: center; align-items: center; height:25px; ">44%(₹11,400)</p></div>
-                        </div>
-                      </div> 
+                  <div class="card" style="width: 98%;"><div style="margin-bottom:0px;">
+                    <img class="imgclass" style="display: block; margin: 0 auto; width: 80%; margin-bottom:10px;" src="Washing-Machineimg/WS-2.jpg" alt="img2">
+                      <a href="#" class="cardanchor" style="text-decoration: none; color:rgb(0,51,128);"><h5 style="font-size: 14px;" class="card-title">Samsung 7 kg Top Load Fully Automatic Washing Machine.</h5></a></div>
+                      <div class="card-body" style="padding:0px; padding-top:7px;">
+                      <div style="display: flex; margin-bottom: 0px; padding-top:0px; margin-top:0px; height:20px "><p style="color:rgb(128,128,128); font-size: 14px; height:20px; ">Offer Price:</p><h6 style="margin-left: 4px; color:black; display: flex; justify-content: center; align-items: center;font-size: 14px; height:20px;">₹15,990.00</h6></div>
+                      <div style="display: flex; margin-bottom: 0px;margin-top: 0px; height:20px; color:rgb(128,128,128)"><p style="font-size: 14px; height:20px;">M.R.P:</p><p style="margin-left: 4px; text-decoration: line-through; display: flex; justify-content: center; align-items: center; font-size: 14px; height:20px;">₹19,800.00</p></div>
+                      <div style="display: flex; margin-bottom: 0px; margin-bottom: 5%; height:20px; color:rgb(128,128,128)"><p style="font-size: 14px; height:20px;" >You Save:</p><p style="margin-left:4px; display: flex;  justify-content: center; align-items: center; font-size: 14px; height:20px; ">19%(₹3,810)</p></div>
+                    </div>
+                  </div> 
                 </div>
                 <div class="col-md col-12">
-                    <div class="card" style="width:100%;">
-                        <img style="width:80%; margin-left:20%;" src="https://www.reliancedigital.in/medias/TCL-WashingMachine-494338668-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wzMTMzM3xpbWFnZS9qcGVnfGltYWdlcy9oNjAvaDBiLzEwMDk5NDg4MjYwMTI2LmpwZ3w1OGVmOWNhZmMzZWNjNzIxYjQwOGU3MTY1MDBmYzlmMDc2MTJiNDlmMjAxMjRhMGQ5YTNmZGNlNzQ2ZGYyODFh" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 style="font-size: 14px; " class="card-title">TCL 7 Kg Top Loading Fully Automatic Washing Machine, F3070TLG Dark Grey</h5>
-                          <div style="display: flex; margin-bottom: 0px;  height:20px "><p >Offer Price:</p><h6 style="margin-left: 4px; color:black; display: flex; justify-content: center; align-items: center; height:25px;">₹14,590.00</h6></div>
-                          <div style="display: flex; margin-bottom: 0px;margin-top: 0px; height:20px;"><p >Offer Price:</p><p style="margin-left: 4px; text-decoration: line-through; display: flex; justify-content: center; align-items: center; height:25px;">₹14,590.00</p></div>
-                          <div style="display: flex; margin-bottom: 0px; margin-top: 0%; height:20px;"><p >M.R.P.:</p><p style="margin-left:4px; display: flex;  justify-content: center; align-items: center; height:25px; ">44%(₹11,400)</p></div>
-                        </div>
-                      </div> 
+                  <div class="card" style="width: 98%;"><div style="margin-bottom:0px;">
+                    <img class="imgclass" style="display: block; margin: 0 auto; width: 80%; margin-bottom:10px;" src="Washing-Machineimg/ws-3.jpg"  alt="img3">
+                      <a href="#" class="cardanchor" style="text-decoration: none; color:rgb(0,51,128);"><h5 style="font-size: 14px;" class="card-title">Samsung 7 kg Star with hygiene Steam and Digital Inverter Fully-</h5></a></div>
+                      <div class="card-body" style="padding:0px; padding-top:7px;">
+                      <div style="display: flex; margin-bottom: 0px; padding-top:0px; margin-top:0px; height:20px "><p style="color:rgb(128,128,128); font-size: 14px; height:20px;">Offer Price:</p><h6 style="margin-left: 4px; color:black; display: flex; justify-content: center; align-items: center; font-size: 14px; height:20px;">₹29,990.00</h6></div>
+                      <div style="display: flex; margin-bottom: 0px;margin-top: 0px; height:20px; color:rgb(128,128,128)"><p style="font-size: 14px; height:20px;">M.R.P:</p><p style="margin-left: 4px; text-decoration: line-through; display: flex; justify-content: center; align-items: center; font-size: 14px; height:20px;">₹34,700.00</p></div>
+                      <div style="display: flex; margin-bottom: 0px; margin-bottom: 5%; height:20px; color:rgb(128,128,128)"><p style="font-size: 14px; height:20px;">You Save:</p><p style="margin-left:4px; display: flex;  justify-content: center; align-items: center; font-size: 14px; height:20px; ">14%(₹4710)</p></div>
+                    </div>
+                  </div> 
                 </div>
                 <div class="col-md col-12">
-                    <div class="card" style="width:100%;">
-                        <img style="width:80%; margin-left:20%;" src="https://www.reliancedigital.in/medias/TCL-WashingMachine-494338668-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wzMTMzM3xpbWFnZS9qcGVnfGltYWdlcy9oNjAvaDBiLzEwMDk5NDg4MjYwMTI2LmpwZ3w1OGVmOWNhZmMzZWNjNzIxYjQwOGU3MTY1MDBmYzlmMDc2MTJiNDlmMjAxMjRhMGQ5YTNmZGNlNzQ2ZGYyODFh" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 style="font-size: 14px; " class="card-title">TCL 7 Kg Top Loading Fully Automatic Washing Machine, F3070TLG Dark Grey</h5>
-                          <div style="display: flex; margin-bottom: 0px;  height:20px "><p >Offer Price:</p><h6 style="margin-left: 4px; color:black; display: flex; justify-content: center; align-items: center; height:25px;">₹14,590.00</h6></div>
-                          <div style="display: flex; margin-bottom: 0px;margin-top: 0px; height:20px;"><p >Offer Price:</p><p style="margin-left: 4px; text-decoration: line-through; display: flex; justify-content: center; align-items: center; height:25px;">₹14,590.00</p></div>
-                          <div style="display: flex; margin-bottom: 0px; margin-top: 0%; height:20px;"><p >M.R.P.:</p><p style="margin-left:4px; display: flex;  justify-content: center; align-items: center; height:25px; ">44%(₹11,400)</p></div>
-                        </div>
-                      </div> 
+                  <div class="card" style="width: 98%; box-sizing: border-box;"><div style="margin-bottom:0px; box-sizing: border-box;">
+                    <div class="card-offer">No Cost EMI</div>
+                    <img class="imgclass" style="display: block; margin: 0 auto; width: 80%; margin-bottom:10px; padding-top:0px;" src="Washing-Machineimg/WS-4.jpg" alt="img4">
+                      <a href="#" class="cardanchor" style="text-decoration: none; color:rgb(0,51,128);"><h5 style="font-size: 14px;" class="card-title">Kelevinator 7.5 kg Top Loading Semi-automatic Washing Machine with One</h5></a></div>
+                      <div class="card-body" style="padding:0px; padding-top:7px;">
+                      <div style="display: flex; margin-bottom: 0px; padding-top:0px; margin-top:0px; height:20px "><p style="color:rgb(128,128,128); font-size: 14px; height:20px;">Offer Price:</p><h6 style="margin-left: 4px; color:black; display: flex; justify-content: center; align-items: center;font-size: 14px; height:20px;">₹11,690.00</h6></div>
+                      <div style="display: flex; margin-bottom: 0px;margin-top: 0px; height:20px; color:rgb(128,128,128)"><p style="font-size: 14px; height:20px;">M.R.P:</p><p style="margin-left: 4px; text-decoration: line-through; display: flex; justify-content: center; align-items: center; font-size: 14px; height:20px;">₹17,990.00</p></div>
+                      <div style="display: flex; margin-bottom: 0px; margin-bottom: 5%; height:20px; color:rgb(128,128,128)"><p style="font-size: 14px; height:20px;">You Save:</p><p style="margin-left:4px; display: flex;  justify-content: center; align-items: center; font-size: 14px; height:20px; ">35%(₹6,300)</p></div>
+                    </div>
+                  </div> 
                 </div>
                 <div class="col-md col-12">
-                    <div class="card" style="width:100%;">
-                        <img style="width:80%; margin-left:20%;" src="https://www.reliancedigital.in/medias/TCL-WashingMachine-494338668-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wzMTMzM3xpbWFnZS9qcGVnfGltYWdlcy9oNjAvaDBiLzEwMDk5NDg4MjYwMTI2LmpwZ3w1OGVmOWNhZmMzZWNjNzIxYjQwOGU3MTY1MDBmYzlmMDc2MTJiNDlmMjAxMjRhMGQ5YTNmZGNlNzQ2ZGYyODFh" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 style="font-size: 14px; " class="card-title">TCL 7 Kg Top Loading Fully Automatic Washing Machine, F3070TLG Dark Grey</h5>
-                          <div style="display: flex; margin-bottom: 0px;  height:20px "><p >Deal Price:</p><h6 style="margin-left: 4px; color:black; display: flex; justify-content: center; align-items: center; height:25px;">₹14,590.00</h6></div>
-                          <div style="display: flex; margin-bottom: 0px;margin-top: 0px; height:20px;"><p >Offer Price:</p><p style="margin-left: 4px; text-decoration: line-through; display: flex; justify-content: center; align-items: center; height:25px;">₹14,590.00</p></div>
-                          <div style="display: flex; margin-bottom: 0px; margin-top: 0%; height:20px;"><p >M.R.P.:</p><p style="margin-left:4px; display: flex;  justify-content: center; align-items: center; height:25px; ">44%(₹11,400)</p></div>
-                        </div>
-                      </div> 
+                  <div class="card" style="width: 98%;"><div style="margin-bottom:0px;">
+                    <img class="imgclass" style="display: block; margin: 0 auto; width: 80%; margin-bottom:10px;" src="Washing-Machineimg/WS-5.jpg"  alt="img5">
+                      <a href="#" class="cardanchor" style="text-decoration: none; color:rgb(0,51,128);"><h5 style="font-size: 14px;" class="card-title">Samsung 6.5 Kg 5 Star Inverter with Diamond Drum Fully-Automatic Top</h5></a></div>
+                      <div class="card-body" style="padding:0px; padding-top:7px;">
+                      <div style="display: flex; margin-bottom: 0px; padding-top:0px; margin-top:0px; height:20px "><p style="color:rgb(128,128,128); font-size: 14px; height:20px;">Offer Price:</p><h6 style="margin-left: 4px; color:black; display: flex; justify-content: center; align-items: center; font-size: 14px; height:20px;">₹15,990.00</h6></div>
+                      <div style="display: flex; margin-bottom: 0px;margin-top: 0px; height:20px; color:rgb(128,128,128)"><p style="font-size: 14px; height:20px;">M.R.P:</p><p style="margin-left: 4px; text-decoration: line-through; display: flex; justify-content: center; align-items: center; font-size: 14px; height:20px;">₹21,500.00</p></div>
+                      <div style="display: flex; margin-bottom: 0px; margin-bottom: 0%; height:20px; color:rgb(128,128,128)"><p style="font-size: 14px; height:20px;" >You Save:</p><p style="margin-left:4px; display: flex;  justify-content: center; align-items: center; font-size: 14px; height:20px; ">26%(₹5,510)</p></div>
+                      <div><i class="fa-solid fa-star fa-flip-horizontal" style="color: rgb(255,164,28);"></i><i class="fa-solid fa-star fa-flip-horizontal" style="color: rgb(255,164,28);"></i><i class="fa-solid fa-star fa-flip-horizontal" style="color: rgb(255,164,28);"></i><i class="fa-solid fa-star fa-flip-horizontal" style="color: rgb(255,164,28);"></i><i class="fa-regular fa-star-half-stroke" style="color: rgb(255,164,28);"></i><a style="text-decoration: none;" href="#">(16)</a></div>
+                    </div>
+                  </div> 
                 </div>
             </div>
            </div>  
@@ -126,89 +170,523 @@ span.material-symbols-outlined:hover{
             <div class="container">
              <div class="row">
                  <div class="col-md col-12">
-                     <div class="card" style="width: 100%;">
-                         <img style="width:80%; margin-left:20%;" src="https://www.reliancedigital.in/medias/TCL-WashingMachine-494338668-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wzMTMzM3xpbWFnZS9qcGVnfGltYWdlcy9oNjAvaDBiLzEwMDk5NDg4MjYwMTI2LmpwZ3w1OGVmOWNhZmMzZWNjNzIxYjQwOGU3MTY1MDBmYzlmMDc2MTJiNDlmMjAxMjRhMGQ5YTNmZGNlNzQ2ZGYyODFh" class="card-img-top" alt="...">
-                         <div class="card-body">
-                           <h5 style="font-size: 14px; " class="card-title">TCL 7 Kg Top Loading Fully Automatic Washing Machine, F3070TLG Dark Grey</h5>
-                           <div style="display: flex; margin-bottom: 0px;  height:20px "><p >Offer Price:</p><h6 style="margin-left: 4px; color:black; display: flex; justify-content: center; align-items: center; height:25px;">₹14,590.00</h6></div>
-                           <div style="display: flex; margin-bottom: 0px;margin-top: 0px; height:20px;"><p >Offer Price:</p><p style="margin-left: 4px; text-decoration: line-through; display: flex; justify-content: center; align-items: center; height:25px;">₹14,590.00</p></div>
-                           <div style="display: flex; margin-bottom: 0px; margin-top: 0%; height:20px;"><p >M.R.P.:</p><p style="margin-left:4px; display: flex;  justify-content: center; align-items: center; height:25px; ">44%(₹11,400)</p></div>
-                         </div>
-                       </div> 
+                  <div class="card" style="width: 98%;"><div style="margin-bottom:0px;">
+                    <img class="imgclass" style="display: block; margin: 0 auto; width: 80%; margin-bottom:10px;" src="Washing-Machineimg/WS-6.jpg"  alt="img6">
+                      <a href="#" class="cardanchor" style="text-decoration: none; color:rgb(0,51,128);"><h5 style="font-size: 14px;" class="card-title">Samsung 6.5 Kg 5 Star Inverter with Diamond Drum Fully-Automatic Top</h5></a></div>
+                      <div class="card-body" style="padding:0px; padding-top:7px;">
+                      <div style="display: flex; margin-bottom: 0px; padding-top:0px; margin-top:0px; height:20px "><p style="color:rgb(128,128,128); font-size: 14px; height:20px;">Offer Price:</p><h6 style="margin-left: 4px; color:black; display: flex; justify-content: center; align-items: center;font-size: 14px; height:20px;">₹15,990.00</h6></div>
+                      <div style="display: flex; margin-bottom: 0px;margin-top: 0px; height:20px; color:rgb(128,128,128)"><p style="font-size: 14px; height:20px;" >M.R.P:</p><p style="margin-left: 4px; text-decoration: line-through; display: flex; justify-content: center; align-items: center; font-size: 14px; height:20px;">₹21,590.00</p></div>
+                      <div style="display: flex; margin-bottom: 0px; margin-bottom: 0%; height:20px; color:rgb(128,128,128)"><p style="font-size: 14px; height:20px;">You Save:</p><p style="margin-left:4px; display: flex;  justify-content: center; align-items: center; font-size: 14px; height:20px; ">26%(₹5510)</p></div>
+                      <div><i class="fa-solid fa-star fa-flip-horizontal" style="color: rgb(255,164,28);"></i><i class="fa-solid fa-star fa-flip-horizontal" style="color: rgb(255,164,28);"></i><i class="fa-solid fa-star fa-flip-horizontal" style="color: rgb(255,164,28);"></i><i class="fa-solid fa-star fa-flip-horizontal" style="color: rgb(255,164,28);"></i><i class="fa-regular fa-star-half-stroke" style="color: rgb(255,164,28);"></i><a style="text-decoration: none;" href="#">(16)</a></div>
+                    </div>
+                  </div> 
                  </div>
                  <div class="col-md col-12">
-                     <div class="card" style="width: 100%;">
-                         <img style="width:80%;margin-left:20%;" src="https://www.reliancedigital.in/medias/TCL-WashingMachine-494338668-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wzMTMzM3xpbWFnZS9qcGVnfGltYWdlcy9oNjAvaDBiLzEwMDk5NDg4MjYwMTI2LmpwZ3w1OGVmOWNhZmMzZWNjNzIxYjQwOGU3MTY1MDBmYzlmMDc2MTJiNDlmMjAxMjRhMGQ5YTNmZGNlNzQ2ZGYyODFh" class="card-img-top" alt="...">
-                         <div class="card-body">
-                           <h5 style="font-size: 14px; " class="card-title">TCL 7 Kg Top Loading Fully Automatic Washing Machine, F3070TLG Dark Grey</h5>
-                           <div style="display: flex; margin-bottom: 0px;  height:20px "><p >Offer Price:</p><h6 style="margin-left: 4px; color:black; display: flex; justify-content: center; align-items: center; height:25px;">₹14,590.00</h6></div>
-                           <div style="display: flex; margin-bottom: 0px;margin-top: 0px; height:20px;"><p >Offer Price:</p><p style="margin-left: 4px; text-decoration: line-through; display: flex; justify-content: center; align-items: center; height:25px;">₹14,590.00</p></div>
-                           <div style="display: flex; margin-bottom: 0px; margin-top: 0%; height:20px;"><p >M.R.P.:</p><p style="margin-left:4px; display: flex;  justify-content: center; align-items: center; height:25px; ">44%(₹11,400)</p></div>
-                         </div>
-                       </div> 
+                  <div class="card" style="width: 98%;"><div style="margin-bottom:0px;">
+                    <img class="imgclass" style="display: block; margin: 0 auto; width: 80%; margin-bottom:10px;" src="Washing-Machineimg/WS-7.jpg"  alt="img7">
+                      <a href="#" class="cardanchor" style="text-decoration: none; color:rgb(0,51,128);"><h5 style="font-size: 14px;" class="card-title">TCL 6.5 Kg Top Loading Fully Automatic Washing Machine,</h5></a></div>
+                      <div class="card-body" style="padding:0px; padding-top:7px;">
+                      <div style="display: flex; margin-bottom: 0px; padding-top:0px; margin-top:0px; height:20px "><p style="color:rgb(128,128,128);font-size: 14px; height:20px;">Offer Price:</p><h6 style="margin-left: 4px; color:black; display: flex; justify-content: center; align-items: center;font-size: 14px; height:20px;">₹13,490.00</h6></div>
+                      <div style="display: flex; margin-bottom: 0px;margin-top: 0px; height:20px; color:rgb(128,128,128)"><p style="font-size: 14px; height:20px;">M.R.P:</p><p style="margin-left: 4px; text-decoration: line-through; display: flex; justify-content: center; align-items: center; font-size: 14px; height:20px;">₹22,990.00</p></div>
+                      <div style="display: flex; margin-bottom: 0px; margin-bottom: 5%; height:20px; color:rgb(128,128,128)"><p style="font-size: 14px; height:20px;">You Save:</p><p style="margin-left:4px; display: flex;  justify-content: center; align-items: center; font-size: 14px; height:20px; ">39%(₹9,000)</p></div>
+                    </div>
+                  </div> 
                  </div>
                  <div class="col-md col-12">
-                     <div class="card" style="width:100%;">
-                         <img style="width:80%; margin-left:20%;" src="https://www.reliancedigital.in/medias/TCL-WashingMachine-494338668-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wzMTMzM3xpbWFnZS9qcGVnfGltYWdlcy9oNjAvaDBiLzEwMDk5NDg4MjYwMTI2LmpwZ3w1OGVmOWNhZmMzZWNjNzIxYjQwOGU3MTY1MDBmYzlmMDc2MTJiNDlmMjAxMjRhMGQ5YTNmZGNlNzQ2ZGYyODFh" class="card-img-top" alt="...">
-                         <div class="card-body">
-                           <h5 style="font-size: 14px; " class="card-title">TCL 7 Kg Top Loading Fully Automatic Washing Machine, F3070TLG Dark Grey</h5>
-                           <div style="display: flex; margin-bottom: 0px;  height:20px "><p >Offer Price:</p><h6 style="margin-left: 4px; color:black; display: flex; justify-content: center; align-items: center; height:25px;">₹14,590.00</h6></div>
-                           <div style="display: flex; margin-bottom: 0px;margin-top: 0px; height:20px;"><p >Offer Price:</p><p style="margin-left: 4px; text-decoration: line-through; display: flex; justify-content: center; align-items: center; height:25px;">₹14,590.00</p></div>
-                           <div style="display: flex; margin-bottom: 0px; margin-top: 0%; height:20px;"><p >M.R.P.:</p><p style="margin-left:4px; display: flex;  justify-content: center; align-items: center; height:25px; ">44%(₹11,400)</p></div>
-                         </div>
-                       </div> 
+                  <div class="card" style="width: 98%;"><div style="margin-bottom:0px;">
+                    <img class="imgclass" style="display: block; margin: 0 auto; width: 80%; margin-bottom:10px;" src="Washing-Machineimg/WS-8.jpg" alt="img8">
+                      <a href="#" class="cardanchor" style="text-decoration: none; color:rgb(0,51,128);"><h5 style="font-size: 14px;" class="card-title">Kelvinator 7 Kg Top Loading Fully Automatic Washing Machine With Error</h5></a></div>
+                      <div class="card-body" style="padding:0px; padding-top:7px;">
+                      <div style="display: flex; margin-bottom: 0px; padding-top:0px; margin-top:0px; height:20px "><p style="color:rgb(128,128,128);font-size: 14px; height:20px;">Offer Price:</p><h6 style="margin-left: 4px; color:black; display: flex; justify-content: center; align-items: center; font-size: 14px; height:20px;">₹14,490.00</h6></div>
+                      <div style="display: flex; margin-bottom: 0px;margin-top: 0px; height:20px; color:rgb(128,128,128)"><p style="font-size: 14px; height:20px;">M.R.P:</p><p style="margin-left: 4px; text-decoration: line-through; display: flex; justify-content: center; align-items: center; font-size: 14px; height:20px;">₹23,990.00</p></div>
+                      <div style="display: flex; margin-bottom: 0px; margin-bottom: 5%; height:20px; color:rgb(128,128,128)"><p style="font-size: 14px; height:20px;">You Save:</p><p style="margin-left:4px; display: flex;  justify-content: center; align-items: center; font-size: 14px; height:20px; ">40%(₹9,500)</p></div>
+                    </div>
+                  </div> 
                  </div>
                  <div class="col-md col-12">
-                     <div class="card" style="width:100%;">
-                         <img style="width:80%; margin-left:20%;" src="https://www.reliancedigital.in/medias/TCL-WashingMachine-494338668-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wzMTMzM3xpbWFnZS9qcGVnfGltYWdlcy9oNjAvaDBiLzEwMDk5NDg4MjYwMTI2LmpwZ3w1OGVmOWNhZmMzZWNjNzIxYjQwOGU3MTY1MDBmYzlmMDc2MTJiNDlmMjAxMjRhMGQ5YTNmZGNlNzQ2ZGYyODFh" class="card-img-top" alt="...">
-                         <div class="card-body">
-                           <h5 style="font-size: 14px; " class="card-title">TCL 7 Kg Top Loading Fully Automatic Washing Machine, F3070TLG Dark Grey</h5>
-                           <div style="display: flex; margin-bottom: 0px;  height:20px "><p >Offer Price:</p><h6 style="margin-left: 4px; color:black; display: flex; justify-content: center; align-items: center; height:25px;">₹14,590.00</h6></div>
-                           <div style="display: flex; margin-bottom: 0px;margin-top: 0px; height:20px;"><p >Offer Price:</p><p style="margin-left: 4px; text-decoration: line-through; display: flex; justify-content: center; align-items: center; height:25px;">₹14,590.00</p></div>
-                           <div style="display: flex; margin-bottom: 0px; margin-top: 0%; height:20px;"><p >M.R.P.:</p><p style="margin-left:4px; display: flex;  justify-content: center; align-items: center; height:25px; ">44%(₹11,400)</p></div>
-                         </div>
-                       </div> 
+                  <div class="card" style="width: 98%;"><div style="padding-bottom:17px;">
+                    <img class="imgclass" style="display: block; margin: 0 auto; width: 80%; margin-bottom:10px;" src="Washing-Machineimg/WS-9.jpg" alt="img9">
+                      <a href="#" class="cardanchor" style="text-decoration: none; color:rgb(0,51,128);"><h5 style="font-size: 14px;" class="card-title">LG 9 Kg Heat Pump Dryer, DHV09SWB</h5></a></div>
+                      <div class="card-body" style="padding:0px; padding-top:7px;">
+                      <div style="display: flex; margin-bottom: 0px; padding-top:0px; margin-top:0px; height:20px; "><p style="color:rgb(128,128,128); font-size: 14px; height:20px;">Offer Price:</p><h6 style="margin-left: 4px; color:black; display: flex; justify-content: center; align-items: center; font-size: 14px; height:20px;">₹69,990.00</h6></div>
+                      <div style="display: flex; margin-bottom: 0px;margin-top: 0px; height:20px; color:rgb(128,128,128)"><p style="font-size: 14px; height:20px;" >M.R.P:</p><p style="margin-left: 4px; text-decoration: line-through; display: flex; justify-content: center; align-items: center; font-size: 14px; height:20px;">₹84,990.00</p></div>
+                      <div style="display: flex; margin-bottom: 0px; margin-bottom: 5%; height:20px; color:rgb(128,128,128)"><p style="font-size: 14px; height:20px;">You Save:</p><p style="margin-left:4px; display: flex;  justify-content: center; align-items: center; font-size: 14px; height:20px; ">18%(₹15,000)</p></div>
+                    </div>
+                  </div> 
                  </div>
                  <div class="col-md col-12">
-                     <div class="card" style="width:100%;">
-                         <img style="width:80%; margin-left:20%;" src="https://www.reliancedigital.in/medias/TCL-WashingMachine-494338668-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wzMTMzM3xpbWFnZS9qcGVnfGltYWdlcy9oNjAvaDBiLzEwMDk5NDg4MjYwMTI2LmpwZ3w1OGVmOWNhZmMzZWNjNzIxYjQwOGU3MTY1MDBmYzlmMDc2MTJiNDlmMjAxMjRhMGQ5YTNmZGNlNzQ2ZGYyODFh" class="card-img-top" alt="...">
-                         <div class="card-body">
-                           <h5 style="font-size: 14px; " class="card-title">TCL 7 Kg Top Loading Fully Automatic Washing Machine, F3070TLG Dark Grey</h5>
-                           <div style="display: flex; margin-bottom: 0px;  height:20px "><p >Deal Price:</p><h6 style="margin-left: 4px; color:black; display: flex; justify-content: center; align-items: center; height:25px;">₹14,590.00</h6></div>
-                           <div style="display: flex; margin-bottom: 0px;margin-top: 0px; height:20px;"><p >Offer Price:</p><p style="margin-left: 4px; text-decoration: line-through; display: flex; justify-content: center; align-items: center; height:25px;">₹14,590.00</p></div>
-                           <div style="display: flex; margin-bottom: 0px; margin-top: 0%; height:20px;"><p >M.R.P.:</p><p style="margin-left:4px; display: flex;  justify-content: center; align-items: center; height:25px; ">44%(₹11,400)</p></div>
-                         </div>
-                       </div> 
+                  <div class="card" style="width: 98%;"><div style="margin-bottom:0px;">
+                    <img class="imgclass" style="display: block; margin: 0 auto; width: 80%; margin-bottom:10px;" src="Washing-Machineimg/WS-10.jpg" alt="img10">
+                      <a href="#" class="cardanchor" style="text-decoration: none; color:rgb(0,51,128);"><h5 style="font-size: 14px;" class="card-title">TCL 7 Kg Top Loading Fully Automatic Washing Machine, F3070TLG Dark Grey</h5></a></div>
+                      <div class="card-body" style="padding:0px; padding-top:7px;">
+                      <div style="display: flex; margin-bottom: 0px; padding-top:0px; margin-top:0px; height:20px "><p style="color:rgb(128,128,128); font-size: 14px; height:20px;">Offer Price:</p><h6 style="margin-left: 4px; color:black; display: flex; justify-content: center; align-items: center;font-size: 14px; height:20px;">₹18,190.00</h6></div>
+                      <div style="display: flex; margin-bottom: 0px;margin-top: 0px; height:20px; color:rgb(128,128,128)"><p style="font-size: 14px; height:20px;">M.R.P:</p><p style="margin-left: 4px; text-decoration: line-through; display: flex; justify-content: center; align-items: center; font-size: 14px; height:20px;">₹22,500.00</p></div>
+                      <div style="display: flex; margin-bottom: 0px; margin-bottom: 5%; height:20px; color:rgb(128,128,128)"><p style="font-size: 14px; height:20px;">You Save:</p><p style="margin-left:4px; display: flex;  justify-content: center; align-items: center; font-size: 14px; height:20px; ">19%(₹4,310)</p></div>
+                    </div>
+                  </div> 
                  </div>
              </div>
             </div>  
            </div>
         </div>
-        <button id="back" class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <button  class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
             <span class="material-symbols-outlined">
                 arrow_back_ios
                 </span>
-          <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span> -->
         </button>
-        <button id="forward" class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <button  class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
             <span class="material-symbols-outlined">
                 arrow_forward_ios
                 </span>
-          <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span> -->
         </button>
       </div>
-    
-    <!-- <div class="card" style="width: 19rem;">
-        <img src="https://www.reliancedigital.in/medias/TCL-WashingMachine-494338668-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wzMTMzM3xpbWFnZS9qcGVnfGltYWdlcy9oNjAvaDBiLzEwMDk5NDg4MjYwMTI2LmpwZ3w1OGVmOWNhZmMzZWNjNzIxYjQwOGU3MTY1MDBmYzlmMDc2MTJiNDlmMjAxMjRhMGQ5YTNmZGNlNzQ2ZGYyODFh" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 style="font-size: 15px; " class="card-title">TCL 7 Kg Top Loading Fully Automatic Washing Machine, F3070TLG Dark Grey</h5>
-          <div style="display: flex; margin-bottom: 0px;  height:20px "><p >Offer Price:</p><h6 style="margin-left: 4px; color:black; display: flex; justify-content: center; align-items: center; height:25px;">₹14,590.00</h6></div>
-          <div style="display: flex; margin-bottom: 0px;margin-top: 0px; height:20px;"><p >Offer Price:</p><p style="margin-left: 4px; text-decoration: line-through; display: flex; justify-content: center; align-items: center; height:25px;">₹14,590.00</p></div>
-          <div style="display: flex; margin-bottom: 0px; margin-top: 0%; height:20px;"><p >M.R.P.:</p><p style="margin-left:4px; display: flex;  justify-content: center; align-items: center; height:25px; ">44%(₹11,400)</p></div>
-        </div>
-      </div> -->
-      <!-- cards -->
+      </div>
+      <br><br><br><br>
+      <div>
+        <div style="display: flex; margin:0; padding:0; padding-top: 30px; background-color: rgb(250, 250, 250);"><p style=" font-weight: 600;">Best Selling TVs | Starting From 8999</p>
+        <button style="background-color: rgb(0,51,128); margin-left: 10px; color:white; border:none; height:25px; width:70px; font-size: 14px;">View all</button></div>
+        <div id="carouselExample1" style="margin-top:0px;" class="carousel slide">
+            <div  class="carousel-inner">
+              <div  class="carousel-item active">
+               <div class="container" >
+                <div class="row" style="margin-top:0;">
+                    <div class="col-md col-12" style="margin-top:0px">
+                      <div class="card" style="width: 98%;"><div style="margin-bottom:0px;">
+                        <img class="imgclass" style="display: block; margin: 0 auto; width: 80%; margin-bottom:10px;" src="TV-Images/TV-1.jpg" alt="img1">
+                          <a href="#" class="cardanchor" style="text-decoration: none; color:rgb(0,51,128);"><h5 style="font-size: 14px;" class="card-title">LG 81.28 cm (32 inch) HD LED Smart TV, 32LM562BPTA</h5></a></div>
+                          <div class="card-body" style="padding:0px; padding-top:7px;">
+                          <div style="display: flex; margin-bottom: 0px; padding-top:0px;  margin-top:0px; height:20px "><p  style="color:rgb(128,128,128);font-size:14px; height:20px;">Offer Price:</p><h6 style=" margin-left: 4px; font-size:14px;color:black; display: flex; justify-content: center; align-items: center; height:20px;">₹13,990.00</h6></div>
+                          <div style="display: flex; margin-bottom: 0px;margin-top: 0px; height:20px; color:rgb(128,128,128)"><p style="font-size:14px;">M.R.P:</p><p style="margin-left: 4px; text-decoration: line-through; display: flex; justify-content: center; align-items: center; font-size: 14px; height:20px;">₹20,990.00</p></div>
+                          <div style="display: flex; margin-bottom: 0px; margin-bottom: 0%; height:20px; color:rgb(128,128,128)"><p style="font-size:14px;  height:20px;">You Save:</p><p style="margin-left:4px; display: flex;  justify-content: center; align-items: center; font-size: 14px; height:20px; " >33%(₹7,000)</p></div>
+                          <div><i class="fa-solid fa-star fa-flip-horizontal" style="color: rgb(255,164,28);"></i><i class="fa-solid fa-star fa-flip-horizontal" style="color: rgb(255,164,28);"></i><i class="fa-solid fa-star fa-flip-horizontal" style="color: rgb(255,164,28);"></i><i class="fa-solid fa-star fa-flip-horizontal" style="color: rgb(255,164,28);"></i><i class="fa-regular fa-star-half-stroke" style="color: rgb(255,164,28);"></i><a style="text-decoration: none;" href="#">(69)</a></div>
+                        </div>
+                      </div> 
+                    </div>
+                    <div class="col-md col-12">
+                      <div class="card" style="width: 98%;"><div style="margin-bottom:0px;">
+                        <img class="imgclass" style="display: block; margin: 0 auto; width: 80%; margin-bottom:10px;" src="TV-Images/TV-2.jpg" alt="img2">
+                          <a href="#" class="cardanchor" style="text-decoration: none; color:rgb(0,51,128);"><h5 style="font-size: 14px;" class="card-title">Hisense 108 cm (43 inch) 4K QLED Google TV, 43U6K, Black</h5></a></div>
+                          <div class="card-body" style="padding:0px; padding-top:7px;">
+                          <div style="display: flex; margin-bottom: 0px; padding-top:0px; margin-top:0px; height:20px "><p style="color:rgb(128,128,128); font-size: 14px; height:20px; ">Offer Price:</p><h6 style="margin-left: 4px; color:black; display: flex; justify-content: center; align-items: center;font-size: 14px; height:20px;">₹26,999.00</h6></div>
+                          <div style="display: flex; margin-bottom: 0px;margin-top: 0px; height:20px; color:rgb(128,128,128)"><p style="font-size: 14px; height:20px;">M.R.P:</p><p style="margin-left: 4px; text-decoration: line-through; display: flex; justify-content: center; align-items: center; font-size: 14px; height:20px;">₹49,990.00</p></div>
+                          <div style="display: flex; margin-bottom: 0px; margin-bottom: 0%; height:20px; color:rgb(128,128,128)"><p style="font-size: 14px; height:20px;" >You Save:</p><p style="margin-left:4px; display: flex;  justify-content: center; align-items: center; font-size: 14px; height:20px; ">46%(₹22,991)</p></div>
+                          <div><i class="fa-solid fa-star fa-flip-horizontal" style="color: rgb(255,164,28);"></i><i class="fa-solid fa-star fa-flip-horizontal" style="color: rgb(255,164,28);"></i><i class="fa-solid fa-star fa-flip-horizontal" style="color: rgb(255,164,28);"></i><i class="fa-solid fa-star fa-flip-horizontal" style="color: rgb(255,164,28);"></i><i class="fa-regular fa-star-half-stroke" style="color: rgb(255,164,28);"></i><a style="text-decoration: none;" href="#">(14)</a></div>
+                        </div>
+                      </div> 
+                    </div>
+                    <div class="col-md col-12">
+                      <div class="card" style="width: 98%;"><div style="margin-bottom:0px;">
+                        <img class="imgclass" style="display: block; margin: 0 auto; width: 80%; margin-bottom:10px;" src="TV-Images/TV-3.jpg"  alt="img3">
+                          <a href="#" class="cardanchor" style="text-decoration: none; color:rgb(0,51,128);"><h5 style="font-size: 14px;" class="card-title">Samsung Wondertainment 80 cm (32 Inch) Smart HD Ready TV,</h5></a></div>
+                          <div class="card-body" style="padding:0px; padding-top:7px;">
+                          <div style="display: flex; margin-bottom: 0px; padding-top:0px; margin-top:0px; height:20px "><p style="color:rgb(128,128,128); font-size: 14px; height:20px;">Offer Price:</p><h6 style="margin-left: 4px; color:black; display: flex; justify-content: center; align-items: center; font-size: 14px; height:20px;">₹12,990.00</h6></div>
+                          <div style="display: flex; margin-bottom: 0px;margin-top: 0px; height:20px; color:rgb(128,128,128)"><p style="font-size: 14px; height:20px;">M.R.P:</p><p style="margin-left: 4px; text-decoration: line-through; display: flex; justify-content: center; align-items: center; font-size: 14px; height:20px;">₹22,900.00</p></div>
+                          <div style="display: flex; margin-bottom: 0px; margin-bottom: 0%; height:20px; color:rgb(128,128,128)"><p style="font-size: 14px; height:20px;">You Save:</p><p style="margin-left:4px; display: flex;  justify-content: center; align-items: center; font-size: 14px; height:20px; ">43%(₹9,910)</p></div>
+                          <div><i class="fa-solid fa-star fa-flip-horizontal" style="color: rgb(255,164,28);"></i><i class="fa-solid fa-star fa-flip-horizontal" style="color: rgb(255,164,28);"></i><i class="fa-solid fa-star fa-flip-horizontal" style="color: rgb(255,164,28);"></i><i class="fa-solid fa-star fa-flip-horizontal" style="color: rgb(255,164,28);"></i><i class="fa-regular fa-star-half-stroke" style="color: rgb(255,164,28);"></i><a style="text-decoration: none;" href="#">(41)</a></div>
+                          <div style="color:rgb(49,129,46); margin-top:1%;   border:1px solid rgb(49,129,46); background-color: rgb(239,252,245); font-size: 11px; font-weight: 500; padding:3px 6px; border-radius: 16px; width:42%; -webkit-box-pack: center; text-align: center;">OFFERS AVAILABLE</div>
+                        </div>
+                      </div> 
+                    </div>
+                    <div class="col-md col-12">
+                      <div class="card" style="width: 98%;"><div style="margin-bottom:0px;">
+                        <!-- <div class="card-offer">No Cost EMI</div> -->
+                        <img class="imgclass" style="display: block; margin: 0 auto; width: 80%; margin-bottom:10px;" src="TV-Images/TV-4.jpg" alt="img4">
+                          <a href="#" class="cardanchor" style="text-decoration: none; color:rgb(0,51,128);"><h5 style="font-size: 14px;" class="card-title">LG 108 cm (43 inch) 4K UHD Smart TV 43UQ7500</h5></a></div>
+                          <div class="card-body" style="padding:0px; padding-top:7px;">
+                          <div style="display: flex; margin-bottom: 0px; padding-top:0px; margin-top:0px; height:20px "><p style="color:rgb(128,128,128); font-size: 14px; height:20px;">Offer Price:</p><h6 style="margin-left: 4px; color:black; display: flex; justify-content: center; align-items: center;font-size: 14px; height:20px;">₹30,990.00</h6></div>
+                          <div style="display: flex; margin-bottom: 0px;margin-top: 0px; height:20px; color:rgb(128,128,128)"><p style="font-size: 14px; height:20px;">M.R.P:</p><p style="margin-left: 4px; text-decoration: line-through; display: flex; justify-content: center; align-items: center; font-size: 14px; height:20px;">₹49,990.00</p></div>
+                          <div style="display: flex; margin-bottom: 0px; margin-bottom: 5%; height:20px; color:rgb(128,128,128)"><p style="font-size: 14px; height:20px;">You Save:</p><p style="margin-left:4px; display: flex;  justify-content: center; align-items: center; font-size: 14px; height:20px; ">38%(₹19,000)</p></div>
+                        </div>
+                      </div> 
+                    </div>
+                    <div class="col-md col-12">
+                      <div class="card" style="width: 98%;"><div style="margin-bottom:0px;">
+                        <img class="imgclass" style="display: block; margin: 0 auto; width: 80%; margin-bottom:10px;" src="TV-Images/TV-5.jpg"  alt="img5">
+                          <a href="#" class="cardanchor" style="text-decoration: none; color:rgb(0,51,128);"><h5 style="font-size: 14px;" class="card-title">Xiaomi A Series 108 cm (43 inch) Full HD Smart TV, ELA5121IN</h5></a></div>
+                          <div class="card-body" style="padding:0px; padding-top:7px;">
+                          <div style="display: flex; margin-bottom: 0px; padding-top:0px; margin-top:0px; height:20px "><p style="color:rgb(128,128,128); font-size: 14px; height:20px;">Offer Price:</p><h6 style="margin-left: 4px; color:black; display: flex; justify-content: center; align-items: center; font-size: 14px; height:20px;">₹23,990.00</h6></div>
+                          <div style="display: flex; margin-bottom: 0px;margin-top: 0px; height:20px; color:rgb(128,128,128)"><p style="font-size: 14px; height:20px;">M.R.P:</p><p style="margin-left: 4px; text-decoration: line-through; display: flex; justify-content: center; align-items: center; font-size: 14px; height:20px;">₹39,999.00</p></div>
+                          <div style="display: flex; margin-bottom: 0px; margin-bottom: 5%; height:20px; color:rgb(128,128,128)"><p style="font-size: 14px; height:20px;" >You Save:</p><p style="margin-left:4px; display: flex;  justify-content: center; align-items: center; font-size: 14px; height:20px; ">40%(₹16,000)</p></div>
+                        </div>
+                      </div> 
+                    </div>
+                </div>
+               </div>  
+              </div>
+              <div  class="carousel-item">
+                <div class="container">
+                 <div class="row">
+                     <div class="col-md col-12">
+                      <div class="card" style="width: 98%;"><div style="margin-bottom:0px;">
+                        <img class="imgclass" style="display: block; margin: 0 auto; width: 80%; margin-bottom:10px;" src="TV-Images/TV-6.jpg"  alt="img6">
+                          <a href="#" class="cardanchor" style="text-decoration: none; color:rgb(0,51,128);"><h5 style="font-size: 14px;" class="card-title">Xiaomi A Series 108 cm (43 inch) Full HD Smart TV, ELA5121IN</h5></a></div>
+                          <div class="card-body" style="padding:0px; padding-top:7px;">
+                          <div style="display: flex; margin-bottom: 0px; padding-top:0px; margin-top:0px; height:20px "><p style="color:rgb(128,128,128); font-size: 14px; height:20px;">Offer Price:</p><h6 style="margin-left: 4px; color:black; display: flex; justify-content: center; align-items: center;font-size: 14px; height:20px;">₹23,999.00</h6></div>
+                          <div style="display: flex; margin-bottom: 0px;margin-top: 0px; height:20px; color:rgb(128,128,128)"><p style="font-size: 14px; height:20px;" >M.R.P:</p><p style="margin-left: 4px; text-decoration: line-through; display: flex; justify-content: center; align-items: center; font-size: 14px; height:20px;">₹39,999.00</p></div>
+                          <div style="display: flex; margin-bottom: 0px; margin-bottom: 5%; height:20px; color:rgb(128,128,128)"><p style="font-size: 14px; height:20px;">You Save:</p><p style="margin-left:4px; display: flex;  justify-content: center; align-items: center; font-size: 14px; height:20px; ">40%(₹16,000)</p></div>
+                        </div>
+                      </div> 
+                     </div>
+                     <div class="col-md col-12">
+                      <div class="card" style="width: 98%;"><div style="margin-bottom:0px;">
+                        <img class="imgclass" style="display: block; margin: 0 auto; width: 80%; margin-bottom:10px;" src="TV-Images/TV-7.jpg"  alt="img7">
+                          <a href="#" class="cardanchor" style="text-decoration: none; color:rgb(0,51,128);"><h5 style="font-size: 14px;" class="card-title">Acer 109 cm (43 inches) Advanced I Series Full HD Smart LED Google TV,</h5></a></div>
+                          <div class="card-body" style="padding:0px; padding-top:7px;">
+                          <div style="display: flex; margin-bottom: 0px; padding-top:0px; margin-top:0px; height:20px "><p style="color:rgb(128,128,128);font-size: 14px; height:20px;">Offer Price:</p><h6 style="margin-left: 4px; color:black; display: flex; justify-content: center; align-items: center;font-size: 14px; height:20px;">₹19,999.00</h6></div>
+                          <div style="display: flex; margin-bottom: 0px;margin-top: 0px; height:20px; color:rgb(128,128,128)"><p style="font-size: 14px; height:20px;">M.R.P:</p><p style="margin-left: 4px; text-decoration: line-through; display: flex; justify-content: center; align-items: center; font-size: 14px; height:20px;">₹32,999.00</p></div>
+                          <div style="display: flex; margin-bottom: 0px; margin-bottom: 5%; height:20px; color:rgb(128,128,128)"><p style="font-size: 14px; height:20px;">You Save:</p><p style="margin-left:4px; display: flex;  justify-content: center; align-items: center; font-size: 14px; height:20px; ">39%(₹13,000)</p></div>
+                        </div>
+                      </div> 
+                     </div>
+                     <div class="col-md col-12">
+                      <div class="card" style="width: 98%;"><div style="margin-bottom:0px;">
+                        <img class="imgclass" style="display: block; margin: 0 auto; width: 80%; margin-bottom:10px;" src="TV-Images/TV-8.jpg" alt="img8">
+                          <a href="#" class="cardanchor" style="text-decoration: none; color:rgb(0,51,128);"><h5 style="font-size: 14px;" class="card-title">Xiaomi A Series 80 cm (32 inch) HD Ready Smart TV, ELA5125IN</h5></a></div>
+                          <div class="card-body" style="padding:0px; padding-top:7px;">
+                          <div style="display: flex; margin-bottom: 0px; padding-top:0px; margin-top:0px; height:20px "><p style="color:rgb(128,128,128);font-size: 14px; height:20px;">Offer Price:</p><h6 style="margin-left: 4px; color:black; display: flex; justify-content: center; align-items: center; font-size: 14px; height:20px;">₹11,999.00</h6></div>
+                          <div style="display: flex; margin-bottom: 0px;margin-top: 0px; height:20px; color:rgb(128,128,128)"><p style="font-size: 14px; height:20px;">M.R.P:</p><p style="margin-left: 4px; text-decoration: line-through; display: flex; justify-content: center; align-items: center; font-size: 14px; height:20px;">₹24,999.00</p></div>
+                          <div style="display: flex; margin-bottom: 0px; margin-bottom: 0%; height:20px; color:rgb(128,128,128)"><p style="font-size: 14px; height:20px;">You Save:</p><p style="margin-left:4px; display: flex;  justify-content: center; align-items: center; font-size: 14px; height:20px; ">52%(₹13,000)</p></div>
+                          <div><i class="fa-solid fa-star fa-flip-horizontal" style="color: rgb(255,164,28);"></i><i class="fa-solid fa-star fa-flip-horizontal" style="color: rgb(255,164,28);"></i><i class="fa-solid fa-star fa-flip-horizontal" style="color: rgb(255,164,28);"></i><i class="fa-solid fa-star fa-flip-horizontal" style="color: rgb(255,164,28);"></i><i class="fa-regular fa-star-half-stroke" style="color: rgb(255,164,28);"></i><a style="text-decoration: none;" href="#">(21)</a></div>
+                        </div>
+                      </div> 
+                     </div>
+                     <div class="col-md col-12">
+                      <div class="card" style="width: 98%;"><div style="padding-bottom:17px;">
+                        <img class="imgclass" style="display: block; margin: 0 auto; width: 80%; margin-bottom:10px;" src="TV-Images/TV-9.jpg" alt="img9">
+                          <a href="#" class="cardanchor" style="text-decoration: none; color:rgb(0,51,128);"><h5 style="font-size: 14px;" class="card-title">TCL 32 Full HD Smart Android TV, 32S5403AF</h5></a></div>
+                          <div class="card-body" style="padding:0px; padding-top:0;">
+                          <div style="display: flex; margin-bottom: 0px; padding-top:0px; margin-top:0px; height:20px; "><p style="color:rgb(128,128,128); font-size: 14px; height:20px;">Offer Price:</p><h6 style="margin-left: 4px; color:black; display: flex; justify-content: center; align-items: center; font-size: 14px; height:20px;">₹13,990.00</h6></div>
+                          <div style="display: flex; margin-bottom: 0px;margin-top: 0px; height:20px; color:rgb(128,128,128)"><p style="font-size: 14px; height:20px;" >M.R.P:</p><p style="margin-left: 4px; text-decoration: line-through; display: flex; justify-content: center; align-items: center; font-size: 14px; height:20px;">₹20,990.00</p></div>
+                          <div style="display: flex; margin-bottom: 0px; margin-bottom: 0%; height:20px; color:rgb(128,128,128)"><p style="font-size: 14px; height:20px;">You Save:</p><p style="margin-left:4px; display: flex;  justify-content: center; align-items: center; font-size: 14px; height:20px; ">33%(₹7,000)</p></div>
+                          <div><i class="fa-solid fa-star fa-flip-horizontal" style="color: rgb(255,164,28);"></i><i class="fa-solid fa-star fa-flip-horizontal" style="color: rgb(255,164,28);"></i><i class="fa-solid fa-star fa-flip-horizontal" style="color: rgb(255,164,28);"></i><i class="fa-solid fa-star fa-flip-horizontal" style="color: rgb(255,164,28);"></i><i class="fa-regular fa-star-half-stroke" style="color: rgb(255,164,28);"></i><a style="text-decoration: none;" href="#">(56)</a></div>
+                        </div>
+                      </div> 
+                     </div>
+                     <div class="col-md col-12">
+                      <div class="card" style="width: 98%;"><div style="margin-bottom:0px;">
+                        <img class="imgclass" style="display: block; margin: 0 auto; width: 80%; margin-bottom:10px;" src="TV-Images/TV-10.jpg" alt="img10">
+                          <a href="#" class="cardanchor" style="text-decoration: none; color:rgb(0,51,128);"><h5 style="font-size: 14px;" class="card-title">Hisense 139 cm (55 inches) 4K UHD QLED Google LED TV, 55U6K (2023 model)</h5></a></div>
+                          <div class="card-body" style="padding:0px; padding-top:7px;">
+                          <div style="display: flex; margin-bottom: 0px; padding-top:0px; margin-top:0px; height:20px "><p style="color:rgb(128,128,128); font-size: 14px; height:20px;">Offer Price:</p><h6 style="margin-left: 4px; color:black; display: flex; justify-content: center; align-items: center;font-size: 14px; height:20px;">₹49,999.00</h6></div>
+                          <div style="display: flex; margin-bottom: 0px;margin-top: 0px; height:20px; color:rgb(128,128,128)"><p style="font-size: 14px; height:20px;">M.R.P:</p><p style="margin-left: 4px; text-decoration: line-through; display: flex; justify-content: center; align-items: center; font-size: 14px; height:20px;">₹89,999.00</p></div>
+                          <div style="display: flex; margin-bottom: 0px; margin-bottom: 5%; height:20px; color:rgb(128,128,128)"><p style="font-size: 14px; height:20px;">You Save:</p><p style="margin-left:4px; display: flex;  justify-content: center; align-items: center; font-size: 14px; height:20px; ">44%(₹40,000)</p></div>
+                        </div>
+                      </div> 
+                     </div>
+                 </div>
+                </div>  
+               </div>
+            </div>
+            <button  class="carousel-control-prev ab" type="button" data-bs-target="#carouselExample1" data-bs-slide="prev">
+                <span class="material-symbols-outlined">
+                    arrow_back_ios
+                    </span>
+            </button>
+            <button  class="carousel-control-next ab" type="button" data-bs-target="#carouselExample1" data-bs-slide="next">
+                <span class="material-symbols-outlined">
+                    arrow_forward_ios
+                    </span>
+            </button>
+          </div>
+          </div>
+       
+          <br><br><br><br>
+          <!-- Mobile Accessories -->
+          
+          <div>
+            <div style="display: flex; margin:0; padding-top: 30px; background-color: rgb(250, 250, 250); "><p style=" font-weight: 600;">Best Deals on Mobile Accessories Starting @179</p>
+            <button style="background-color: rgb(0,51,128); margin-left: 10px; color:white; border:none; height:25px; width:70px; font-size: 14px;">View all</button></div>
+            <div id="carouselExample2" style="margin-top:0px;" class="carousel slide">
+                <div  class="carousel-inner">
+                  <div  class="carousel-item active">
+                   <div class="container" >
+                    <div class="row" style="margin-top:0;">
+                        <div class="col-md col-12" style="margin-top:0px">
+                          <div class="card" style="width: 98%;"><div style="margin-bottom:0px;">
+                            <img class="imgclass" style="display: block; margin: 0 auto; width: 80%; margin-bottom:10px;" src="Mobile-accessories/ma-1.jpg" alt="img1">
+                              <a href="#" class="cardanchor" style="text-decoration: none; color:rgb(0,51,128);"><h5 style="font-size: 14px;" class="card-title">Apple 20W USB-C Power Adapter (for iPhone, iPad & AirPods)</h5></a></div>
+                              <div class="card-body" style="padding:0px; padding-top:7px;">
+                              <div style="display: flex; margin-bottom: 0px; padding-top:0px;  margin-top:0px; height:20px "><p  style="color:rgb(128,128,128);font-size:14px; height:20px;">Offer Price:</p><h6 style=" margin-left: 4px; font-size:14px;color:black; display: flex; justify-content: center; align-items: center; height:20px;">₹1,599.00</h6></div>
+                              <div style="display: flex; margin-bottom: 0px;margin-top: 0px; height:20px; color:rgb(128,128,128)"><p style="font-size:14px;">M.R.P:</p><p style="margin-left: 4px; text-decoration: line-through; display: flex; justify-content: center; align-items: center; font-size: 14px; height:20px;">₹1,900.00</p></div>
+                              <div style="display: flex; margin-bottom: 0px; margin-bottom: 0%; height:20px; color:rgb(128,128,128)"><p style="font-size:14px;  height:20px;">You Save:</p><p style="margin-left:4px; display: flex;  justify-content: center; align-items: center; font-size: 14px; height:20px; " >16%(₹301)</p></div>
+                              <div><i class="fa-solid fa-star fa-flip-horizontal" style="color: rgb(255,164,28);"></i><i class="fa-solid fa-star fa-flip-horizontal" style="color: rgb(255,164,28);"></i><i class="fa-solid fa-star fa-flip-horizontal" style="color: rgb(255,164,28);"></i><i class="fa-solid fa-star fa-flip-horizontal" style="color: rgb(255,164,28);"></i><i class="fa-regular fa-star-half-stroke" style="color: rgb(255,164,28);"></i><a style="text-decoration: none;" href="#">(3543)</a></div>
+                            </div>
+                          </div> 
+                        </div>
+                        <div class="col-md col-12">
+                          <div class="card" style="width: 98%;"><div style="margin-bottom:0px;">
+                            <img class="imgclass" style="display: block; margin: 0 auto; width: 80%; margin-bottom:10px;" src="Mobile-accessories/ma-2.jpg" alt="img2">
+                              <a href="#" class="cardanchor" style="text-decoration: none; color:rgb(0,51,128);"><h5 style="font-size: 14px;" class="card-title">Samsung Original 25W, Type C, Power Adapter, TA800 - Black</h5></a></div>
+                              <div class="card-body" style="padding:0px; padding-top:7px;">
+                              <div style="display: flex; margin-bottom: 0px; padding-top:0px; margin-top:0px; height:20px "><p style="color:rgb(128,128,128); font-size: 14px; height:20px; ">Offer Price:</p><h6 style="margin-left: 4px; color:black; display: flex; justify-content: center; align-items: center;font-size: 14px; height:20px;">₹1,299.00</h6></div>
+                              <div style="display: flex; margin-bottom: 0px;margin-top: 0px; height:20px; color:rgb(128,128,128)"><p style="font-size: 14px; height:20px;">M.R.P:</p><p style="margin-left: 4px; text-decoration: line-through; display: flex; justify-content: center; align-items: center; font-size: 14px; height:20px;">₹1.699.00</p></div>
+                              <div style="display: flex; margin-bottom: 0px; margin-bottom: 0%; height:20px; color:rgb(128,128,128)"><p style="font-size: 14px; height:20px;" >You Save:</p><p style="margin-left:4px; display: flex;  justify-content: center; align-items: center; font-size: 14px; height:20px; ">24%(₹400)</p></div>
+                              <div><i class="fa-solid fa-star fa-flip-horizontal" style="color: rgb(255,164,28);"></i><i class="fa-solid fa-star fa-flip-horizontal" style="color: rgb(255,164,28);"></i><i class="fa-solid fa-star fa-flip-horizontal" style="color: rgb(255,164,28);"></i><i class="fa-solid fa-star fa-flip-horizontal" style="color: rgb(255,164,28);"></i><i class="fa-regular fa-star-half-stroke" style="color: rgb(255,164,28);"></i><a style="text-decoration: none;" href="#">(301)</a></div>
+                            </div>
+                          </div> 
+                        </div>
+                        <div class="col-md col-12">
+                          <div class="card" style="width: 98%;"><div style="margin-bottom:0px;">
+                            <img class="imgclass" style="display: block; margin: 0 auto; width: 80%; margin-bottom:10px;" src="Mobile-accessories/ma-3.jpg"  alt="img3">
+                              <a href="#" class="cardanchor" style="text-decoration: none; color:rgb(0,51,128);"><h5 style="font-size: 14px;" class="card-title">Reconnect 10000 mAh Power Bank, Dual Port, 10 W</h5></a></div>
+                              <div class="card-body" style="padding:0px; padding-top:7px;">
+                              <div style="display: flex; margin-bottom: 0px; padding-top:0px; margin-top:0px; height:20px "><p style="color:rgb(128,128,128); font-size: 14px; height:20px;">Offer Price:</p><h6 style="margin-left: 4px; color:black; display: flex; justify-content: center; align-items: center; font-size: 14px; height:20px;">₹549.00</h6></div>
+                              <div style="display: flex; margin-bottom: 0px;margin-top: 0px; height:20px; color:rgb(128,128,128)"><p style="font-size: 14px; height:20px;">M.R.P:</p><p style="margin-left: 4px; text-decoration: line-through; display: flex; justify-content: center; align-items: center; font-size: 14px; height:20px;">₹990.00</p></div>
+                              <div style="display: flex; margin-bottom: 0px; margin-bottom: 0%; height:20px; color:rgb(128,128,128)"><p style="font-size: 14px; height:20px;">You Save:</p><p style="margin-left:4px; display: flex;  justify-content: center; align-items: center; font-size: 14px; height:20px; ">45%(₹441)</p></div>
+                              <div><i class="fa-solid fa-star fa-flip-horizontal" style="color: rgb(255,164,28);"></i><i class="fa-solid fa-star fa-flip-horizontal" style="color: rgb(255,164,28);"></i><i class="fa-solid fa-star fa-flip-horizontal" style="color: rgb(255,164,28);"></i><i class="fa-solid fa-star fa-flip-horizontal" style="color: rgb(255,164,28);"></i><i class="fa-regular fa-star-half-stroke" style="color: rgb(255,164,28);"></i><a style="text-decoration: none;" href="#">(11)</a></div>
+                            </div>
+                          </div> 
+                        </div>
+                        <div class="col-md col-12">
+                          <div class="card" style="width: 98%;"><div style="margin-bottom:0px;">
+                            <!-- <div class="card-offer">No Cost EMI</div> -->
+                            <img class="imgclass" style="display: block; margin: 0 auto; width: 80%; margin-bottom:10px;" src="Mobile-accessories/ma-4.jpg" alt="img4">
+                              <a href="#" class="cardanchor" style="text-decoration: none; color:rgb(0,51,128);"><h5 style="font-size: 14px;" class="card-title">OnePlus Warp 50 Watts Wireless Mobile Phone Charger, White</h5></a></div>
+                              <div class="card-body" style="padding:0px; padding-top:7px;">
+                              <div style="display: flex; margin-bottom: 0px; padding-top:0px; margin-top:0px; height:20px "><p style="color:rgb(128,128,128); font-size: 14px; height:20px;">Offer Price:</p><h6 style="margin-left: 4px; color:black; display: flex; justify-content: center; align-items: center;font-size: 14px; height:20px;">₹3,699.00</h6></div>
+                              <div style="display: flex; margin-bottom: 0px;margin-top: 0px; height:20px; color:rgb(128,128,128)"><p style="font-size: 14px; height:20px;">M.R.P:</p><p style="margin-left: 4px; text-decoration: line-through; display: flex; justify-content: center; align-items: center; font-size: 14px; height:20px;">₹5,990.00</p></div>
+                              <div style="display: flex; margin-bottom: 0px; margin-bottom: 5%; height:20px; color:rgb(128,128,128)"><p style="font-size: 14px; height:20px;">You Save:</p><p style="margin-left:4px; display: flex;  justify-content: center; align-items: center; font-size: 14px; height:20px; ">38%(₹2,291)</p></div>
+                            </div>
+                          </div> 
+                        </div>
+                        <div class="col-md col-12">
+                          <div class="card" style="width: 98%;"><div style="margin-bottom:0px;">
+                            <img class="imgclass" style="display: block; margin: 0 auto; width: 80%; margin-bottom:10px;" src="Mobile-accessories/ma-5.jpg"  alt="img5">
+                              <a href="#" class="cardanchor" style="text-decoration: none; color:rgb(0,51,128);"><h5 style="font-size: 14px;" class="card-title">Apple MNWP3HN/A 35 Watt Dual USB-C Port Power Adapter, White</h5></a></div>
+                              <div class="card-body" style="padding:0px; padding-top:7px;">
+                              <div style="display: flex; margin-bottom: 0px; padding-top:0px; margin-top:0px; height:20px "><p style="color:rgb(128,128,128); font-size: 14px; height:20px;">Offer Price:</p><h6 style="margin-left: 4px; color:black; display: flex; justify-content: center; align-items: center; font-size: 14px; height:20px;">₹4,699.00</h6></div>
+                              <div style="display: flex; margin-bottom: 0px;margin-top: 0px; height:20px; color:rgb(128,128,128)"><p style="font-size: 14px; height:20px;">M.R.P:</p><p style="margin-left: 4px; text-decoration: line-through; display: flex; justify-content: center; align-items: center; font-size: 14px; height:20px;">₹5,800.00</p></div>
+                              <div style="display: flex; margin-bottom: 0px; margin-bottom: 5%; height:20px; color:rgb(128,128,128)"><p style="font-size: 14px; height:20px;" >You Save:</p><p style="margin-left:4px; display: flex;  justify-content: center; align-items: center; font-size: 14px; height:20px; ">19%(₹1,101)</p></div>
+                            </div>
+                          </div> 
+                        </div>
+                    </div>
+                   </div>  
+                  </div>
+                  <div  class="carousel-item">
+                    <div class="container">
+                     <div class="row">
+                         <div class="col-md col-12">
+                          <div class="card" style="width: 98%;"><div style="margin-bottom:0px;">
+                            <img class="imgclass" style="display: block; margin: 0 auto; width: 80%; margin-bottom:10px;" src="Mobile-accessories/ma-6.jpg"  alt="img6">
+                              <a href="#" class="cardanchor" style="text-decoration: none; color:rgb(0,51,128);"><h5 style="font-size: 14px;" class="card-title">OnePlus Warp 50 Watts Wireless Mobile Phone Charger, White</h5></a></div>
+                              <div class="card-body" style="padding:0px; padding-top:7px;">
+                              <div style="display: flex; margin-bottom: 0px; padding-top:0px; margin-top:0px; height:20px "><p style="color:rgb(128,128,128); font-size: 14px; height:20px;">Offer Price:</p><h6 style="margin-left: 4px; color:black; display: flex; justify-content: center; align-items: center;font-size: 14px; height:20px;">₹3,699.00</h6></div>
+                              <div style="display: flex; margin-bottom: 0px;margin-top: 0px; height:20px; color:rgb(128,128,128)"><p style="font-size: 14px; height:20px;" >M.R.P:</p><p style="margin-left: 4px; text-decoration: line-through; display: flex; justify-content: center; align-items: center; font-size: 14px; height:20px;">₹5,990.00</p></div>
+                              <div style="display: flex; margin-bottom: 0px; margin-bottom: 5%; height:20px; color:rgb(128,128,128)"><p style="font-size: 14px; height:20px;">You Save:</p><p style="margin-left:4px; display: flex;  justify-content: center; align-items: center; font-size: 14px; height:20px; ">38%(₹16,000)</p></div>
+                            </div>
+                          </div> 
+                         </div>
+                         <div class="col-md col-12">
+                          <div class="card" style="width: 98%;"><div style="margin-bottom:0px;">
+                            <img class="imgclass" style="display: block; margin: 0 auto; width: 80%; margin-bottom:10px;" src="Mobile-accessories/ma-7.jpg"  alt="img7">
+                              <a href="#" class="cardanchor" style="text-decoration: none; color:rgb(0,51,128);"><h5 style="font-size: 14px;" class="card-title">Apple MNWP3HN/A 35 Watt Dual USB-C Port Power Adapter, White</h5></a></div>
+                              <div class="card-body" style="padding:0px; padding-top:7px;">
+                              <div style="display: flex; margin-bottom: 0px; padding-top:0px; margin-top:0px; height:20px "><p style="color:rgb(128,128,128);font-size: 14px; height:20px;">Offer Price:</p><h6 style="margin-left: 4px; color:black; display: flex; justify-content: center; align-items: center;font-size: 14px; height:20px;">₹4,699.00</h6></div>
+                              <div style="display: flex; margin-bottom: 0px;margin-top: 0px; height:20px; color:rgb(128,128,128)"><p style="font-size: 14px; height:20px;">M.R.P:</p><p style="margin-left: 4px; text-decoration: line-through; display: flex; justify-content: center; align-items: center; font-size: 14px; height:20px;">₹5,800.00</p></div>
+                              <div style="display: flex; margin-bottom: 0px; margin-bottom: 5%; height:20px; color:rgb(128,128,128)"><p style="font-size: 14px; height:20px;">You Save:</p><p style="margin-left:4px; display: flex;  justify-content: center; align-items: center; font-size: 14px; height:20px; ">19%(₹1,101)</p></div>
+                            </div>
+                          </div> 
+                         </div>
+                         <div class="col-md col-12">
+                          <div class="card" style="width: 98%;"><div style="margin-bottom:0px;">
+                            <img class="imgclass" style="display: block; margin: 0 auto; width: 80%; margin-bottom:10px;" src="Mobile-accessories/ma-8.jpg" alt="img8">
+                              <a href="#" class="cardanchor" style="text-decoration: none; color:rgb(0,51,128);"><h5 style="font-size: 14px;" class="card-title">Reconnect 20 Watt Fast Charging Wall Charger RAUAB2105, White</h5></a></div>
+                              <div class="card-body" style="padding:0px; padding-top:7px;">
+                              <div style="display: flex; margin-bottom: 0px; padding-top:0px; margin-top:0px; height:20px "><p style="color:rgb(128,128,128);font-size: 14px; height:20px;">Offer Price:</p><h6 style="margin-left: 4px; color:black; display: flex; justify-content: center; align-items: center; font-size: 14px; height:20px;">₹499.00</h6></div>
+                              <div style="display: flex; margin-bottom: 0px;margin-top: 0px; height:20px; color:rgb(128,128,128)"><p style="font-size: 14px; height:20px;">M.R.P:</p><p style="margin-left: 4px; text-decoration: line-through; display: flex; justify-content: center; align-items: center; font-size: 14px; height:20px;">₹999.00</p></div>
+                              <div style="display: flex; margin-bottom: 0px; margin-bottom: 0%; height:20px; color:rgb(128,128,128)"><p style="font-size: 14px; height:20px;">You Save:</p><p style="margin-left:4px; display: flex;  justify-content: center; align-items: center; font-size: 14px; height:20px; ">50%(₹500)</p></div>
+                            </div>
+                          </div> 
+                         </div>
+                         <div class="col-md col-12">
+                          <div class="card" style="width: 98%;"><div style="padding-bottom:17px;">
+                            <img class="imgclass" style="display: block; margin: 0 auto; width: 80%; margin-bottom:10px;" src="Mobile-accessories/ma-9.jpg" alt="img9">
+                              <a href="#" class="cardanchor" style="text-decoration: none; color:rgb(0,51,128);"><h5 style="font-size: 14px;" class="card-title">Apple 1m USB-C to Lightning Cable (White)</h5></a></div>
+                              <div class="card-body" style="padding:0px; padding-top:7px;">
+                              <div style="display: flex; margin-bottom: 0px; padding-top:0px; margin-top:0px; height:20px; "><p style="color:rgb(128,128,128); font-size: 14px; height:20px;">Offer Price:</p><h6 style="margin-left: 4px; color:black; display: flex; justify-content: center; align-items: center; font-size: 14px; height:20px;">₹1,549.00</h6></div>
+                              <div style="display: flex; margin-bottom: 0px;margin-top: 0px; height:20px; color:rgb(128,128,128)"><p style="font-size: 14px; height:20px;" >M.R.P:</p><p style="margin-left: 4px; text-decoration: line-through; display: flex; justify-content: center; align-items: center; font-size: 14px; height:20px;">₹1900.00</p></div>
+                              <div style="display: flex; margin-bottom: 0px; margin-bottom: 0%; height:20px; color:rgb(128,128,128)"><p style="font-size: 14px; height:20px;">You Save:</p><p style="margin-left:4px; display: flex;  justify-content: center; align-items: center; font-size: 14px; height:20px; ">18%(₹351)</p></div>
+                              <div><i class="fa-solid fa-star fa-flip-horizontal" style="color: rgb(255,164,28);"></i><i class="fa-solid fa-star fa-flip-horizontal" style="color: rgb(255,164,28);"></i><i class="fa-solid fa-star fa-flip-horizontal" style="color: rgb(255,164,28);"></i><i class="fa-solid fa-star fa-flip-horizontal" style="color: rgb(255,164,28);"></i><i class="fa-regular fa-star-half-stroke" style="color: rgb(255,164,28);"></i><a style="text-decoration: none;" href="#">(195)</a></div>
+                            </div>
+                          </div> 
+                         </div>
+                         <div class="col-md col-12">
+                          <div class="card" style="width: 98%;"><div style="margin-bottom:0px;">
+                            <img class="imgclass" style="display: block; margin: 0 auto; width: 80%; margin-bottom:10px;" src="Mobile-accessories/ma-10.jpg" alt="img10">
+                              <a href="#" class="cardanchor" style="text-decoration: none; color:rgb(0,51,128);"><h5 style="font-size: 14px;" class="card-title">EVM Charger with Micro USB Cable CH01 White</h5></a></div>
+                              <div class="card-body" style="padding:0px; padding-top:7px;">
+                              <div style="display: flex; margin-bottom: 0px; padding-top:0px; margin-top:0px; height:20px "><p style="color:rgb(128,128,128); font-size: 14px; height:20px;">Offer Price:</p><h6 style="margin-left: 4px; color:black; display: flex; justify-content: center; align-items: center;font-size: 14px; height:20px;">₹169.00</h6></div>
+                              <div style="display: flex; margin-bottom: 0px;margin-top: 0px; height:20px; color:rgb(128,128,128)"><p style="font-size: 14px; height:20px;">M.R.P:</p><p style="margin-left: 4px; text-decoration: line-through; display: flex; justify-content: center; align-items: center; font-size: 14px; height:20px;">₹299.00</p></div>
+                              <div style="display: flex; margin-bottom: 0px; margin-bottom: 5%; height:20px; color:rgb(128,128,128)"><p style="font-size: 14px; height:20px;">You Save:</p><p style="margin-left:4px; display: flex;  justify-content: center; align-items: center; font-size: 14px; height:20px; ">43%(₹130)</p></div>
+                            </div>
+                          </div> 
+                         </div>
+                     </div>
+                    </div>  
+                   </div>
+                </div>
+                <button  class="carousel-control-prev ab" type="button" data-bs-target="#carouselExample2" data-bs-slide="prev">
+                    <span class="material-symbols-outlined">
+                        arrow_back_ios
+                        </span>
+                </button>
+                <button  class="carousel-control-next ab" type="button" data-bs-target="#carouselExample2" data-bs-slide="next">
+                    <span class="material-symbols-outlined">
+                        arrow_forward_ios
+                        </span>
+                </button>
+              </div>
+              </div>
+
+
+              <br><br><br><br>
+              <!-- Home And Kitchen Accessories -->
+              
+              <div>
+                <div style="display: flex; margin:0; padding-top: 30px; background-color: rgb(250, 250, 250); "><p style=" font-weight: 600;">Home And Kitchen Essentials | Starting From 389</p>
+                <button style="background-color: rgb(0,51,128); margin-left: 10px; color:white; border:none; height:25px; width:70px; font-size: 14px;">View all</button></div>
+                <div id="carouselExample3" style="margin-top:0px;" class="carousel slide">
+                    <div  class="carousel-inner">
+                      <div  class="carousel-item active">
+                       <div class="container" >
+                        <div class="row" style="margin-top:0;">
+                            <div class="col-md col-12" style="margin-top:0px">
+                              <div class="card" style="width: 98%;"><div style="margin-bottom:0px;">
+                                <img class="imgclass" style="display: block; margin: 0 auto; width: 80%; margin-bottom:10px;" src="Kitchen-appliance/k1.jpg" alt="img1">
+                                  <a href="#" class="cardanchor" style="text-decoration: none; color:rgb(0,51,128);"><h5 style="font-size: 14px;" class="card-title">Bosch TrueMixx Pro 1000 Watts Mixer Grinder, Black</h5></a></div>
+                                  <div class="card-body" style="padding:0px; padding-top:7px;">
+                                  <div style="display: flex; margin-bottom: 0px; padding-top:0px;  margin-top:0px; height:20px "><p  style="color:rgb(128,128,128);font-size:14px; height:20px;">Offer Price:</p><h6 style=" margin-left: 4px; font-size:14px;color:black; display: flex; justify-content: center; align-items: center; height:20px;">₹7,299.00</h6></div>
+                                  <div style="display: flex; margin-bottom: 0px;margin-top: 0px; height:20px; color:rgb(128,128,128)"><p style="font-size:14px;">M.R.P:</p><p style="margin-left: 4px; text-decoration: line-through; display: flex; justify-content: center; align-items: center; font-size: 14px; height:20px;">₹10,590.00</p></div>
+                                  <div style="display: flex; margin-bottom: 0px; margin-bottom: 0%; height:20px; color:rgb(128,128,128)"><p style="font-size:14px;  height:20px;">You Save:</p><p style="margin-left:4px; display: flex;  justify-content: center; align-items: center; font-size: 14px; height:20px; " >31%(₹3,291)</p></div>
+                                  <div><i class="fa-solid fa-star fa-flip-horizontal" style="color: rgb(255,164,28);"></i><i class="fa-solid fa-star fa-flip-horizontal" style="color: rgb(255,164,28);"></i><i class="fa-solid fa-star fa-flip-horizontal" style="color: rgb(255,164,28);"></i><i class="fa-solid fa-star fa-flip-horizontal" style="color: rgb(255,164,28);"></i><i class="fa-regular fa-star-half-stroke" style="color: rgb(255,164,28);"></i><a style="text-decoration: none;" href="#">(28)</a></div>
+                                </div>
+                              </div> 
+                            </div>
+                            <div class="col-md col-12">
+                              <div class="card" style="width: 98%;"><div style="margin-bottom:0px;">
+                                <img class="imgclass" style="display: block; margin: 0 auto; width: 80%; margin-bottom:10px;" src="Kitchen-appliance/k2.png" alt="img2">
+                                  <a href="#" class="cardanchor" style="text-decoration: none; color:rgb(0,51,128);"><h5 style="font-size: 14px;" class="card-title">Bajaj New Shakti, 15 litres, 2000 Watt Storage Water Heater, Glass Lined</h5></a></div>
+                                  <div class="card-body" style="padding:0px; padding-top:7px;">
+                                  <div style="display: flex; margin-bottom: 0px; padding-top:0px; margin-top:0px; height:20px "><p style="color:rgb(128,128,128); font-size: 14px; height:20px; ">Offer Price:</p><h6 style="margin-left: 4px; color:black; display: flex; justify-content: center; align-items: center;font-size: 14px; height:20px;">₹7,499.00</h6></div>
+                                  <div style="display: flex; margin-bottom: 0px;margin-top: 0px; height:20px; color:rgb(128,128,128)"><p style="font-size: 14px; height:20px;">M.R.P:</p><p style="margin-left: 4px; text-decoration: line-through; display: flex; justify-content: center; align-items: center; font-size: 14px; height:20px;">₹11,500.00</p></div>
+                                  <div style="display: flex; margin-bottom: 0px; margin-bottom: 0%; height:20px; color:rgb(128,128,128)"><p style="font-size: 14px; height:20px;" >You Save:</p><p style="margin-left:4px; display: flex;  justify-content: center; align-items: center; font-size: 14px; height:20px; ">35%(₹4,001)</p></div>
+                                </div>
+                              </div> 
+                            </div>
+                            <div class="col-md col-12">
+                              <div class="card" style="width: 98%;"><div style="margin-bottom:0px;">
+                                <img class="imgclass" style="display: block; margin: 0 auto; width: 80%; margin-bottom:10px;" src="Kitchen-appliance/k3.jpg"  alt="img3">
+                                  <a href="#" class="cardanchor" style="text-decoration: none; color:rgb(0,51,128);"><h5 style="font-size: 14px;" class="card-title">Aquaguard Jazz, 6.2 Litres, 45 Watt, RO+UV+TA+AC Water Purifier, Active </h5></a></div>
+                                  <div class="card-body" style="padding:0px; padding-top:7px;">
+                                  <div style="display: flex; margin-bottom: 0px; padding-top:0px; margin-top:0px; height:20px "><p style="color:rgb(128,128,128); font-size: 14px; height:20px;">Offer Price:</p><h6 style="margin-left: 4px; color:black; display: flex; justify-content: center; align-items: center; font-size: 14px; height:20px;">₹15,999.00</h6></div>
+                                  <div style="display: flex; margin-bottom: 0px;margin-top: 0px; height:20px; color:rgb(128,128,128)"><p style="font-size: 14px; height:20px;">M.R.P:</p><p style="margin-left: 4px; text-decoration: line-through; display: flex; justify-content: center; align-items: center; font-size: 14px; height:20px;">₹22,000.00</p></div>
+                                  <div style="display: flex; margin-bottom: 0px; margin-bottom: 0%; height:20px; color:rgb(128,128,128)"><p style="font-size: 14px; height:20px;">You Save:</p><p style="margin-left:4px; display: flex;  justify-content: center; align-items: center; font-size: 14px; height:20px; ">27%(₹6,001)</p></div>
+                                </div>
+                              </div> 
+                            </div>
+                            <div class="col-md col-12">
+                              <div class="card" style="width: 98%;"><div style="margin-bottom:0px;">
+                                <!-- <div class="card-offer">No Cost EMI</div> -->
+                                <img class="imgclass" style="display: block; margin: 0 auto; width: 80%; margin-bottom:10px;" src="Kitchen-appliance/k4.jpg" alt="img4">
+                                  <a href="#" class="cardanchor" style="text-decoration: none; color:rgb(0,51,128);"><h5 style="font-size: 14px;" class="card-title">Orient EcoSwift, 25 Litres, 2000 Watt Storage Water Heater, Stainless Steele</h5></a></div>
+                                  <div class="card-body" style="padding:0px; padding-top:7px;">
+                                  <div style="display: flex; margin-bottom: 0px; padding-top:0px; margin-top:0px; height:20px "><p style="color:rgb(128,128,128); font-size: 14px; height:20px;">Offer Price:</p><h6 style="margin-left: 4px; color:black; display: flex; justify-content: center; align-items: center;font-size: 14px; height:20px;">₹7,999.00</h6></div>
+                                  <div style="display: flex; margin-bottom: 0px;margin-top: 0px; height:20px; color:rgb(128,128,128)"><p style="font-size: 14px; height:20px;">M.R.P:</p><p style="margin-left: 4px; text-decoration: line-through; display: flex; justify-content: center; align-items: center; font-size: 14px; height:20px;">₹9,990.00</p></div>
+                                  <div style="display: flex; margin-bottom: 0px; margin-bottom: 0%; height:20px; color:rgb(128,128,128)"><p style="font-size: 14px; height:20px;">You Save:</p><p style="margin-left:4px; display: flex;  justify-content: center; align-items: center; font-size: 14px; height:20px; ">20%(₹1,991)</p></div>
+                                  <div><i class="fa-solid fa-star fa-flip-horizontal" style="color: rgb(255,164,28);"></i><i class="fa-solid fa-star fa-flip-horizontal" style="color: rgb(255,164,28);"></i><i class="fa-solid fa-star fa-flip-horizontal" style="color: rgb(255,164,28);"></i><i class="fa-solid fa-star fa-flip-horizontal" style="color: rgb(255,164,28);"></i><i class="fa-regular fa-star-half-stroke" style="color: rgb(255,164,28);"></i><a style="text-decoration: none;" href="#">(19)</a></div>
+                                </div>
+                              </div> 
+                            </div>
+                            <div class="col-md col-12">
+                              <div class="card" style="width: 98%;"><div style="margin-bottom:0px;">
+                                <img class="imgclass" style="display: block; margin: 0 auto; width: 80%; margin-bottom:10px;" src="Kitchen-appliance/k5.jpg"  alt="img5">
+                                  <a href="#" class="cardanchor" style="text-decoration: none; color:rgb(0,51,128);"><h5 style="font-size: 14px;" class="card-title">Usha 812T Fan-based Heater with Adjustable Height</h5></a></div>
+                                  <div class="card-body" style="padding:0px; padding-top:7px;">
+                                  <div style="display: flex; margin-bottom: 0px; padding-top:0px; margin-top:0px; height:20px "><p style="color:rgb(128,128,128); font-size: 14px; height:20px;">Offer Price:</p><h6 style="margin-left: 4px; color:black; display: flex; justify-content: center; align-items: center; font-size: 14px; height:20px;">₹2,499.00</h6></div>
+                                  <div style="display: flex; margin-bottom: 0px;margin-top: 0px; height:20px; color:rgb(128,128,128)"><p style="font-size: 14px; height:20px;">M.R.P:</p><p style="margin-left: 4px; text-decoration: line-through; display: flex; justify-content: center; align-items: center; font-size: 14px; height:20px;">₹3,290.00</p></div>
+                                  <div style="display: flex; margin-bottom: 0px; margin-bottom: 5%; height:20px; color:rgb(128,128,128)"><p style="font-size: 14px; height:20px;" >You Save:</p><p style="margin-left:4px; display: flex;  justify-content: center; align-items: center; font-size: 14px; height:20px; ">24%(₹791)</p></div>
+                                </div>
+                              </div> 
+                            </div>
+                        </div>
+                       </div>  
+                      </div>
+                      <div  class="carousel-item">
+                        <div class="container">
+                         <div class="row">
+                             <div class="col-md col-12">
+                              <div class="card" style="width: 98%;"><div style="margin-bottom:0px;">
+                                <img class="imgclass" style="display: block; margin: 0 auto; width: 80%; margin-bottom:10px;" src="Kitchen-appliance/k6.jpg"  alt="img6">
+                                  <a href="#" class="cardanchor" style="text-decoration: none; color:rgb(0,51,128);"><h5 style="font-size: 14px;" class="card-title">Usha 812T Fan-based Heater with Adjustable Height</h5></a></div>
+                                  <div class="card-body" style="padding:0px; padding-top:7px;">
+                                  <div style="display: flex; margin-bottom: 0px; padding-top:0px; margin-top:0px; height:20px "><p style="color:rgb(128,128,128); font-size: 14px; height:20px;">Offer Price:</p><h6 style="margin-left: 4px; color:black; display: flex; justify-content: center; align-items: center;font-size: 14px; height:20px;">₹2,499.00</h6></div>
+                                  <div style="display: flex; margin-bottom: 0px;margin-top: 0px; height:20px; color:rgb(128,128,128)"><p style="font-size: 14px; height:20px;" >M.R.P:</p><p style="margin-left: 4px; text-decoration: line-through; display: flex; justify-content: center; align-items: center; font-size: 14px; height:20px;">₹3,290.00</p></div>
+                                  <div style="display: flex; margin-bottom: 0px; margin-bottom: 5%; height:20px; color:rgb(128,128,128)"><p style="font-size: 14px; height:20px;">You Save:</p><p style="margin-left:4px; display: flex;  justify-content: center; align-items: center; font-size: 14px; height:20px; ">24%(₹791)</p></div>
+                                </div>
+                              </div> 
+                             </div>
+                             <div class="col-md col-12">
+                              <div class="card" style="width: 98%;"><div style="margin-bottom:0px;">
+                                <img class="imgclass" style="display: block; margin: 0 auto; width: 80%; margin-bottom:10px;" src="Kitchen-appliance/k7.png"  alt="img7">
+                                  <a href="#" class="cardanchor" style="text-decoration: none; color:rgb(0,51,128);"><h5 style="font-size: 14px;" class="card-title">Bajaj Majesty DX 4, 1000 Watts, Dry Iron, White</h5></a></div>
+                                  <div class="card-body" style="padding:0px; padding-top:7px;">
+                                  <div style="display: flex; margin-bottom: 0px; padding-top:0px; margin-top:0px; height:20px "><p style="color:rgb(128,128,128);font-size: 14px; height:20px;">Offer Price:</p><h6 style="margin-left: 4px; color:black; display: flex; justify-content: center; align-items: center;font-size: 14px; height:20px;">₹599.00</h6></div>
+                                  <div style="display: flex; margin-bottom: 0px;margin-top: 0px; height:20px; color:rgb(128,128,128)"><p style="font-size: 14px; height:20px;">M.R.P:</p><p style="margin-left: 4px; text-decoration: line-through; display: flex; justify-content: center; align-items: center; font-size: 14px; height:20px;">₹1,400.00</p></div>
+                                  <div style="display: flex; margin-bottom: 0px; margin-bottom: 0%; height:20px; color:rgb(128,128,128)"><p style="font-size: 14px; height:20px;">You Save:</p><p style="margin-left:4px; display: flex;  justify-content: center; align-items: center; font-size: 14px; height:20px; ">57%(₹801)</p></div>
+                                  <div><i class="fa-solid fa-star fa-flip-horizontal" style="color: rgb(255,164,28);"></i><i class="fa-solid fa-star fa-flip-horizontal" style="color: rgb(255,164,28);"></i><i class="fa-solid fa-star fa-flip-horizontal" style="color: rgb(255,164,28);"></i><i class="fa-solid fa-star fa-flip-horizontal" style="color: rgb(255,164,28);"></i><i class="fa-regular fa-star-half-stroke" style="color: rgb(255,164,28);"></i><a style="text-decoration: none;" href="#">(19)</a></div>
+                                </div>
+                              </div> 
+                             </div>
+                             <div class="col-md col-12">
+                              <div class="card" style="width: 98%;"><div style="margin-bottom:0px;">
+                                <img class="imgclass" style="display: block; margin: 0 auto; width: 80%; margin-bottom:10px;" src="Kitchen-appliance/k8.jpg" alt="img8">
+                                  <a href="#" class="cardanchor" style="text-decoration: none; color:rgb(0,51,128);"><h5 style="font-size: 14px;" class="card-title">Bajaj Majesty, 3 Litres, 3000 Watt, Instant Water Heater, Copper Heating</h5></a></div>
+                                  <div class="card-body" style="padding:0px; padding-top:7px;">
+                                  <div style="display: flex; margin-bottom: 0px; padding-top:0px; margin-top:0px; height:20px "><p style="color:rgb(128,128,128);font-size: 14px; height:20px;">Offer Price:</p><h6 style="margin-left: 4px; color:black; display: flex; justify-content: center; align-items: center; font-size: 14px; height:20px;">₹2,599.00</h6></div>
+                                  <div style="display: flex; margin-bottom: 0px;margin-top: 0px; height:20px; color:rgb(128,128,128)"><p style="font-size: 14px; height:20px;">M.R.P:</p><p style="margin-left: 4px; text-decoration: line-through; display: flex; justify-content: center; align-items: center; font-size: 14px; height:20px;">₹5,250.00</p></div>
+                                  <div style="display: flex; margin-bottom: 0px; margin-bottom: 0%; height:20px; color:rgb(128,128,128)"><p style="font-size: 14px; height:20px;">You Save:</p><p style="margin-left:4px; display: flex;  justify-content: center; align-items: center; font-size: 14px; height:20px; ">50%(₹2,651)</p></div>
+                                </div>
+                              </div> 
+                             </div>
+                             <div class="col-md col-12">
+                              <div class="card" style="width: 98%;"><div style="padding-bottom:17px;">
+                                <img class="imgclass" style="display: block; margin: 0 auto; width: 80%; margin-bottom:0px;" src="Kitchen-appliance/k9.jpg" alt="img9">
+                                  <a href="#" class="cardanchor" style="text-decoration: none; color:rgb(0,51,128);"><h5 style="font-size: 14px;" class="card-title">PRESTIGE PIC22 1200 Watts Induction Cooktop, 6 Pre-Set Menus, Anti</h5></a></div>
+                                  <div class="card-body" style="padding:0px; margin-top:0px;">
+                                  <div style="display: flex; margin-bottom: 0px; padding-top:0px; margin-top:0px; height:20px; "><p style="color:rgb(128,128,128); font-size: 14px; height:20px;">Offer Price:</p><h6 style="margin-left: 4px; color:black; display: flex; justify-content: center; align-items: center; font-size: 14px; height:20px;">₹1,549.00</h6></div>
+                                  <div style="display: flex; margin-bottom: 0px;margin-top: 0px; height:20px; color:rgb(128,128,128)"><p style="font-size: 14px; height:20px;" >M.R.P:</p><p style="margin-left: 4px; text-decoration: line-through; display: flex; justify-content: center; align-items: center; font-size: 14px; height:20px;">₹2,895.00</p></div>
+                                  <div style="display: flex; margin-bottom: 0px; margin-bottom: 0%; height:20px; color:rgb(128,128,128)"><p style="font-size: 14px; height:20px;">You Save:</p><p style="margin-left:4px; display: flex;  justify-content: center; align-items: center; font-size: 14px; height:20px; ">46%(₹1,346)</p></div>
+                                  <div><i class="fa-solid fa-star fa-flip-horizontal" style="color: rgb(255,164,28);"></i><i class="fa-solid fa-star fa-flip-horizontal" style="color: rgb(255,164,28);"></i><i class="fa-solid fa-star fa-flip-horizontal" style="color: rgb(255,164,28);"></i><i class="fa-solid fa-star fa-flip-horizontal" style="color: rgb(255,164,28);"></i><i class="fa-regular fa-star-half-stroke" style="color: rgb(255,164,28);"></i><a style="text-decoration: none;" href="#">(31)</a></div>
+                                </div>
+                              </div> 
+                             </div>
+                             <div class="col-md col-12">
+                              <div class="card" style="width: 98%;"><div style="margin-bottom:0px;">
+                                <img class="imgclass" style="display: block; margin: 0 auto; width: 80%; margin-bottom:10px;" src="Kitchen-appliance/k10.jpg" alt="img10">
+                                  <a href="#" class="cardanchor" style="text-decoration: none; color:rgb(0,51,128);"><h5 style="font-size: 14px;" class="card-title">LG MC2886BHTM 28 litres Convection Microwave Oven, 251 Auto Cook Menu, 175 Indian Auto Cook</h5></a></div>
+                                  <div class="card-body" style="padding:0px; padding-top:7px;">
+                                  <div style="display: flex; margin-bottom: 0px; padding-top:0px; margin-top:0px; height:20px "><p style="color:rgb(128,128,128); font-size: 14px; height:20px;">Offer Price:</p><h6 style="margin-left: 4px; color:black; display: flex; justify-content: center; align-items: center;font-size: 14px; height:20px;">₹14,999.00</h6></div>
+                                  <div style="display: flex; margin-bottom: 0px;margin-top: 0px; height:20px; color:rgb(128,128,128)"><p style="font-size: 14px; height:20px;">M.R.P:</p><p style="margin-left: 4px; text-decoration: line-through; display: flex; justify-content: center; align-items: center; font-size: 14px; height:20px;">₹20,099.00</p></div>
+                                  <div style="display: flex; margin-bottom: 0px; margin-bottom: 5%; height:20px; color:rgb(128,128,128)"><p style="font-size: 14px; height:20px;">You Save:</p><p style="margin-left:4px; display: flex;  justify-content: center; align-items: center; font-size: 14px; height:20px; ">25%(₹5,100)</p></div>
+                                </div>
+                              </div> 
+                             </div>
+                         </div>
+                        </div>  
+                       </div>
+                    </div>
+                    <button  class="carousel-control-prev ab" type="button" data-bs-target="#carouselExample3" data-bs-slide="prev">
+                        <span class="material-symbols-outlined">
+                            arrow_back_ios
+                            </span>
+                    </button>
+                    <button  class="carousel-control-next ab" type="button" data-bs-target="#carouselExample3" data-bs-slide="next">
+                        <span class="material-symbols-outlined">
+                            arrow_forward_ios
+                            </span>
+                    </button>
+                  </div>
+                  </div>
   </body>
 </html>
