@@ -1,0 +1,72 @@
+.yellowBottom {
+    width: 1440px;
+    height: 656px;
+    background: #FFDD78;
+    position: relative;
+    >div:nth-child(1) {
+        color: var(--Text_Black, #000);
+        /* H5 */
+        font-family: "DM Sans";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px; /* 150% */
+        letter-spacing: 4.8px;
+        text-transform: uppercase;
+        position: absolute;
+        margin: 127px 1176px 505px 135px;
+    }
+    >div:nth-child(2) {
+        color: var(--Text_Black, #000);
+        /* H2 */
+        font-family: "DM Serif Display";
+        font-size: 56px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 64px; /* 114.286% */
+        position: absolute;
+        margin: 172px 886px 356px 135px;
+    }
+    >div:nth-child(3) {
+        position: absolute;
+        margin: 329px 835px 224px 135px;
+        color: var(--Text_Black, #000);
+        /* Text_Big */
+        font-family: "DM Sans";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 32px; /* 160% */
+    }
+    >div:nth-child(4) {
+        position:absolute;
+        margin: 436px 1035px 144px 135px;
+        >input::placeholder {
+            padding-left: 10px;
+        }
+    }
+    >div:nth-child(5) {
+        position: absolute;
+        margin: 436px 835px 144px 435px;
+        width: 170px;
+        height: 48px;
+        border-radius: 5px;
+        background-color: #444CCC;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #FFF;
+        font-family: "DM Sans";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 24px; /* 150% */
+    }
+    >div:nth-child(6) {
+        position: absolute;
+        margin: 21px -10px 45px 565px;
+        width: 1374px;
+        height: 590px;
+    }
+    
+}
