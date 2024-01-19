@@ -1,0 +1,130 @@
+.div1 {
+    width: 1440px;
+    height: 496px;
+    flex-shrink: 0;
+    background: #434CCC;
+    /*display: flex;
+  flex-direction: column;
+  align-items: flex-start; */
+
+    svg {
+        width: 13px;
+        height: 21px;
+        flex-shrink: 0;
+        fill: #FFF;
+        /*margin-bottom: 20px;*/
+        /* margin: 206px 0 269px 152px;*/
+        margin: 206px 0px 269px 152px;
+
+    }
+
+    .svg2 {
+        width: 13px;
+        height: 21px;
+        flex-shrink: 0;
+        fill: #FFF;
+        margin: 270px 0px 205px 0px;
+        /*margin:270px 0px 205px 154px;*/
+        /*margin: 43px 0 205px 154px; */
+    }
+
+    .img {
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        flex-shrink: 0;
+        background-color: aqua;
+        margin: 326 184 355 175;
+
+    }
+}
+
+.div2 {
+    width: 1440px;
+    height: 1600px;
+    flex-shrink: 0;
+
+    .div21 {
+        width: 100%;
+        height: 100%;
+
+        /* text-align: center; */
+        h5 {
+            margin-top: 63px;
+            color: var(--Text_Black, #000);
+            text-align: center;
+            margin: auto;
+
+            /* H5 */
+            font-family: "DM Sans";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+            /* 150% */
+            letter-spacing: 4.8px;
+            text-transform: uppercase;
+            width: 140px;
+            height: 24px;
+        }
+
+        h4 {
+            color: var(--Text_Black, #000);
+            text-align: center;
+            margin: auto;
+
+            /* H2 */
+            font-family: "DM Serif Display";
+            font-size: 56px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 64px;
+            /* 114.286% */
+            width: 321px;
+            height: 64px;
+        }
+
+        p {
+            margin: auto;
+            color: var(--Text_Black, #000);
+            text-align: center;
+
+            /* Text_Big */
+            font-family: "DM Sans";
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 32px;
+            /* 160% */
+            width: 570px;
+            height: 83px;
+            flex-shrink: 0;
+        }
+
+    }
+
+    .div211 {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    button {
+        color: #434CCC;
+        margin: auto;
+        text-align: center;
+        font-family: "DM Sans";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 24px;
+        /* 150% */
+        width: 170px;
+        height: 48px;
+        flex-shrink: 0;
+        border-radius: 5px;
+        border: 1px solid var(--Primary_1, #434CCC);
+        opacity: 0.32;
+    }
+
+
+}
