@@ -1,0 +1,60 @@
+body{
+   margin: 0;
+   padding:0;
+.fit-box{
+width: 1440px;
+height: 768px;
+flex-shrink: 0;
+background: #434CCC;
+   
+.h5class{
+    color: var(--Text_White, #FFF);
+    text-align: center;
+    
+}
+h5{  
+padding-top: 79px;
+width:124;
+height:24px;
+font-family: "DM Sans";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 150% */
+letter-spacing: 4.8px;
+text-transform: uppercase;
+}
+
+.h2calss{
+    color: var(--Text_White, #FFF);
+    text-align: center;
+}
+h2{
+    padding-top: 21px;
+    margin-left:506px;
+    width:429px;
+    height:64px;
+    font-family: "DM Serif Display";
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 64px; /* 114.286% */
+}
+
+.textBig{
+    color: var(--Text_White, #FFF);
+    text-align: center;
+}
+p{
+    padding-top: 29px;
+    padding-left: 435px;
+    width:570px;
+    height:83px;
+    font-family: "DM Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px; /* 160% */
+}
+}
+}
