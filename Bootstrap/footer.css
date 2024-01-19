@@ -1,0 +1,18 @@
+
+#margin-left{
+    margin-left: 1%;
+    margin-bottom: 0;
+}
+#rlpmargin{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.onmove:hover{
+   color:rgb(149, 149, 149);
+   cursor: pointer;
+}
+.ptagfooter{
+    margin-top:0;
+    margin-bottom: 5px;
+    font-size:14px;
+}
