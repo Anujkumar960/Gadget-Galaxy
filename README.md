@@ -1,4 +1,4 @@
-# GADGET GALAXY BOOTSTRAP PROJECT UNIT-3
+# BOOTSTRAP AND FIGMA PROJECT UNIT-3
 Greetings and welcome to our WEB204 Construct Week Project! Our team of five members collaborated over the course of five days to bring this project to life, comprising two distinct parts.
 
 ## Part 1: Gadget-Galaxy(E-Commerce Website for Electronic Device.)
@@ -15,7 +15,6 @@ At Gadget Galaxy, we are passionate about bringing innovation and convenience to
 **Key Features:**
 - **Diverse Product Range:** Explore a comprehensive collection of electronic gadgets from top brands.
 - **User-Friendly Interface:** Navigate our platform effortlessly and find the perfect gadget with ease.
-- **Secure Transactions:** Shop confidently with our secure and reliable payment gateway.
 
 Here is a link that will take you to the website: https://65ae2ce57077ff0ca44d9700--benevolent-custard-752e14.netlify.app/
   
@@ -30,16 +29,18 @@ Here is a link that will take you to the website: https://65ae2ce57077ff0ca44d97
 
   ## Part 2: Figma Design Exploration 
 
-   **Overview**
+   ## About the Project
    Welcome to the Figma Design Exploration project! This initiative is focused on crafting visually appealing and user-friendly design solutions using Figma, a powerful collaborative design tool. Our goal is to 
-   experiment with various design concepts, refine user interfaces, and foster creativity within the design community.
+   experiment with various design concepts, refine user interfaces, and foster creativity within the design community.The techstack that was used was purely front-end based and limited to HTML, CSS, Sass and 
+   Figma.
 
-  ## Features
-  **Responsive Designs:** Explore designs optimized for a range of devices and screen sizes.
-  **Pixel-Fixed Design:** Our commitment to pixel perfection ensures a precise and consistent design experience across various resolutions and devices.
-  **Interactive Prototypes:** View interactive prototypes to experience the flow and functionality.
-  **Style Guide:** Access a comprehensive style guide for consistent design elements.
-  **Collaborative Design:** Leverage the collaborative features of Figma for seamless teamwork.
+  Here is a link that will take you to the website:- https://65ae5b71fe2cc0347715adcb--super-tanuki-265f43.netlify.app/
+
+## Features
+ - **Responsive Designs:** Explore designs optimized for a range of devices and screen sizes.
+ - **Interactive Prototypes:** View interactive prototypes to experience the flow and functionality.
+ - **Style Guide:** Access a comprehensive style guide for consistent design elements.
+ - **Collaborative Design:** Leverage the collaborative features of Figma for seamless teamwork.
 
  **Some Basic Layout of navbar**
  ![Screenshot 2024-01-22 16490](https://github.com/Anujkumar960/algorithm-kalaakar-1234/assets/154539617/89dd1f74-4f7b-4152-b61e-0c1ece1f653a)
