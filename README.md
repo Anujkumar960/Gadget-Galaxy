@@ -1,3 +1,2 @@
 # GADGET GALAXY BOOTSTRAP PROJECT UNIT-3
-Figma
-Bootstrap
+
