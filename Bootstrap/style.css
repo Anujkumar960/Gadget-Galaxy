@@ -1,7 +1,8 @@
+
 .top{
     display: flex;
     justify-content: end;
-    background-color: red;
+    background-color: rgb(228,37,41);
     align-items: center;
     gap: 10px;
     color: white;
@@ -17,12 +18,12 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: red;
+    background-color: rgb(228,37,41);
     color: white;
     position: sticky;
-    top: 0px;
+    top: -1px;
     height: 70px;
-    z-index: 1;
+    z-index: 5;
     >div:nth-child(1){
       width: 18%;
       display: flex;
@@ -85,8 +86,8 @@
     font-size: 12px;
     font-weight: 500;
     position: sticky;
-    top: 70px;
-    z-index: 1;
+    top: 69px;
+    z-index: 5;
     div>a{
       text-decoration: none;
       color: white;
@@ -142,14 +143,6 @@
         text-decoration: underline;
       }    
   }
-  /* @media screen and (max-width: 768px) {
-    .pin {
-        display: none;
-    }
-
-    span {
-        display: inline;
-    } */
   #carouselExampleInterval{
     margin-top: 10px;
     cursor: pointer;
