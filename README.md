@@ -1,4 +1,6 @@
 # GADGET GALAXY BOOTSTRAP PROJECT UNIT-3
+
+## About the Project
 Gadget Galaxy is an electronic commerce platform that offers a wide range of electronic items. Our collaborative team of 5 members has crafted this project to provide users with a seamless experience for purchasing the latest gadgets and electronics.
 
 ## Description
