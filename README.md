@@ -16,6 +16,9 @@ At Gadget Galaxy, we are passionate about bringing innovation and convenience to
   **Some Basic Layout of carousel**
     ![Screenshot 2024-01-22 154905](https://github.com/Anujkumar960/algorithm-kalaakar-1234/assets/154539617/054b4410-92b6-4d76-a81a-0929e2ca9fbd)
 
+  **Some Basic Layout of footer**
+    ![Screenshot 2024-01-22 154905](https://github.com/Anujkumar960/algorithm-kalaakar-1234/assets/154539617/054b4410-92b6-4d76-a81a-0929e2ca9fbd)
+
 
 
 
