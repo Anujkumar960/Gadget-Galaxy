@@ -45,7 +45,8 @@ Here is a link that will take you to the website: https://gadgetgalaxy-bootstrap
  **Some Basic Layout of navbar**
  ![Screenshot 2024-01-22 16490](https://github.com/Anujkumar960/algorithm-kalaakar-1234/assets/154539617/89dd1f74-4f7b-4152-b61e-0c1ece1f653a)
 
-
+Thank you for taking the time to look at our project! Hope you liked it!
+**Happy Watching!**
 
 
 
