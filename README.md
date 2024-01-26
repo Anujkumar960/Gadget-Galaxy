@@ -16,7 +16,7 @@ At Gadget Galaxy, we are passionate about bringing innovation and convenience to
 - **Diverse Product Range:** Explore a comprehensive collection of electronic gadgets from top brands.
 - **User-Friendly Interface:** Navigate our platform effortlessly and find the perfect gadget with ease.
 
-Here is a link that will take you to the website: https://65ae2ce57077ff0ca44d9700--benevolent-custard-752e14.netlify.app/
+Here is a link that will take you to the website: https://gadgetgalaxy-bootstrap.netlify.app/
   
   **Some Basic Layout of navbar**
    ![Screenshot 2024-01-22 154846](https://github.com/Anujkumar960/algorithm-kalaakar-1234/assets/154539617/e15deb6d-249b-4b53-85c7-b4a53cafc8b3)
