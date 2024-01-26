@@ -34,7 +34,7 @@ Here is a link that will take you to the website: https://gadgetgalaxy-bootstrap
    experiment with various design concepts, refine user interfaces, and foster creativity within the design community.The techstack that was used was purely front-end based and limited to HTML, CSS, Sass and 
    Figma.
 
-  Here is a link that will take you to the website:- https://65ae5b71fe2cc0347715adcb--super-tanuki-265f43.netlify.app/
+  Here is a link that will take you to the website:- https://figmadesign-sass.netlify.app/
 
 ## Features
  - **Responsive Designs:** Explore designs optimized for a range of devices and screen sizes.
