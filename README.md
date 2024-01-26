@@ -47,7 +47,7 @@ Here is a link that will take you to the website: https://gadgetgalaxy-bootstrap
 
 Thank you for taking the time to look at our project! Hope you liked it!
 
- # Happy Watching!
+  **Happy Watching!**
 
 
 
